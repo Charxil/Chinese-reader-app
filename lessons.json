@@ -1718,5 +1718,396 @@
         "corrections": []
       }
     ]
+  },
+  {
+    "id": "lmwexhuv6",
+    "title": "Daily Routine Activities",
+    "title_my": "နေ့စဉ်လုပ်ရိုးလုပ်စဉ်များ",
+    "date": "2026-11-13",
+    "words": [
+      {
+        "hanzi": "洗脸",
+        "pinyin": "xǐ liǎn",
+        "english": "to wash one's face",
+        "myanmar": "မျက်နှာသစ်ပါ",
+        "mm_sound": "ရှီလျန်",
+        "note": "",
+        "chars": [
+          {
+            "c": "洗",
+            "pinyin": "xǐ",
+            "mm_sound": "ရှီ",
+            "english": "to wash",
+            "myanmar": "ဆေးသည်"
+          },
+          {
+            "c": "脸",
+            "pinyin": "liǎn",
+            "mm_sound": "လျန်",
+            "english": "face",
+            "myanmar": "မျက်နှာ"
+          }
+        ],
+        "example": {
+          "zh": "我每天早上洗脸。",
+          "pinyin": "Wǒ měitiān zǎoshang xǐ liǎn.",
+          "mm_sound": "ဝေါ် မေ့ထျန် ဇောင်ရှန် ရှီလျန်။",
+          "english": "I wash my face every morning.",
+          "myanmar": "ကျွန်တော် နေ့တိုင်း မနက် မျက်နှာသစ်တယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "xǐ liǎng",
+            "to": "xǐ liǎn",
+            "why": "脸 ends in -n, not -ng"
+          }
+        ]
+      },
+      {
+        "hanzi": "洗碗",
+        "pinyin": "xǐ wǎn",
+        "english": "to wash the dishes",
+        "myanmar": "ပန်းကန်ဆေးပါ",
+        "mm_sound": "ရှီဝမ်",
+        "note": "",
+        "chars": [
+          {
+            "c": "洗",
+            "pinyin": "xǐ",
+            "mm_sound": "ရှီ",
+            "english": "to wash",
+            "myanmar": "ဆေးသည်"
+          },
+          {
+            "c": "碗",
+            "pinyin": "wǎn",
+            "mm_sound": "ဝမ်",
+            "english": "bowl",
+            "myanmar": "ပန်းကန်လုံး"
+          }
+        ],
+        "example": {
+          "zh": "吃饭以后我洗碗。",
+          "pinyin": "Chī fàn yǐhòu wǒ xǐ wǎn.",
+          "mm_sound": "ချီဖန် ယီဟိုး ဝေါ် ရှီဝမ်။",
+          "english": "After eating, I wash the dishes.",
+          "myanmar": "ထမင်းစားပြီးရင် ကျွန်တော် ပန်းကန်ဆေးတယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "洗衣服",
+        "pinyin": "xǐ yīfu",
+        "english": "to wash clothes",
+        "myanmar": "အဝတ်လျှော်ပါ",
+        "mm_sound": "ရှီယီဖူ",
+        "note": "衣服 uses the measure word 件 (jiàn)",
+        "chars": [
+          {
+            "c": "洗",
+            "pinyin": "xǐ",
+            "mm_sound": "ရှီ",
+            "english": "to wash",
+            "myanmar": "ဆေးသည်"
+          },
+          {
+            "c": "衣",
+            "pinyin": "yī",
+            "mm_sound": "ယီ",
+            "english": "clothing",
+            "myanmar": "အဝတ်"
+          },
+          {
+            "c": "服",
+            "pinyin": "fú",
+            "mm_sound": "ဖူ",
+            "english": "clothes",
+            "myanmar": "အဝတ်အစား"
+          }
+        ],
+        "example": {
+          "zh": "妈妈在洗衣服。",
+          "pinyin": "Māma zài xǐ yīfu.",
+          "mm_sound": "မားမ ဇိုင် ရှီယီဖူ။",
+          "english": "Mom is washing clothes.",
+          "myanmar": "အမေ အဝတ်လျှော်နေတယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "xǐ yīfú",
+            "to": "xǐ yīfu",
+            "why": "服 is neutral tone in 衣服"
+          }
+        ]
+      },
+      {
+        "hanzi": "洗澡",
+        "pinyin": "xǐ zǎo",
+        "english": "to take a bath or shower",
+        "myanmar": "ရေချိုးပါ",
+        "mm_sound": "ရှီဇောင်",
+        "note": "",
+        "chars": [
+          {
+            "c": "洗",
+            "pinyin": "xǐ",
+            "mm_sound": "ရှီ",
+            "english": "to wash",
+            "myanmar": "ဆေးသည်"
+          },
+          {
+            "c": "澡",
+            "pinyin": "zǎo",
+            "mm_sound": "ဇောင်",
+            "english": "bath",
+            "myanmar": "ရေချိုးခြင်း"
+          }
+        ],
+        "example": {
+          "zh": "我晚上洗澡。",
+          "pinyin": "Wǒ wǎnshang xǐ zǎo.",
+          "mm_sound": "ဝေါ် ဝမ်ရှန် ရှီဇောင်။",
+          "english": "I take a shower in the evening.",
+          "myanmar": "ကျွန်တော် ညနေ ရေချိုးတယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "刷牙",
+        "pinyin": "shuā yá",
+        "english": "to brush one's teeth",
+        "myanmar": "သွားတိုက်ပါ",
+        "mm_sound": "ရှွာယာ",
+        "note": "",
+        "chars": [
+          {
+            "c": "刷",
+            "pinyin": "shuā",
+            "mm_sound": "ရှွာ",
+            "english": "to brush",
+            "myanmar": "တိုက်သည်"
+          },
+          {
+            "c": "牙",
+            "pinyin": "yá",
+            "mm_sound": "ယာ",
+            "english": "tooth",
+            "myanmar": "သွား"
+          }
+        ],
+        "example": {
+          "zh": "睡觉以前要刷牙。",
+          "pinyin": "Shuìjiào yǐqián yào shuā yá.",
+          "mm_sound": "ရွှေကျောင့် ယီချန် ယောင့် ရှွာယာ။",
+          "english": "You should brush your teeth before sleeping.",
+          "myanmar": "အိပ်ရာမဝင်ခင် သွားတိုက်ရမယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "梳头",
+        "pinyin": "shū tóu",
+        "english": "to comb one's hair",
+        "myanmar": "ခေါင်းဖီးသည်",
+        "mm_sound": "ရှူထို",
+        "note": "",
+        "chars": [
+          {
+            "c": "梳",
+            "pinyin": "shū",
+            "mm_sound": "ရှူ",
+            "english": "to comb",
+            "myanmar": "ဖီးသည်"
+          },
+          {
+            "c": "头",
+            "pinyin": "tóu",
+            "mm_sound": "ထို",
+            "english": "head",
+            "myanmar": "ခေါင်း"
+          }
+        ],
+        "example": {
+          "zh": "她在梳头。",
+          "pinyin": "Tā zài shū tóu.",
+          "mm_sound": "ထာ ဇိုင် ရှူထို။",
+          "english": "She is combing her hair.",
+          "myanmar": "သူမ ခေါင်းဖီးနေတယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "shā tóu",
+            "to": "shū tóu",
+            "why": "梳 is pronounced shū"
+          }
+        ]
+      },
+      {
+        "hanzi": "照镜子",
+        "pinyin": "zhào jìngzi",
+        "english": "to look in the mirror",
+        "myanmar": "မှန်ကြည့်ပါ",
+        "mm_sound": "ကျောင့်ကျင့်ဇ",
+        "note": "镜子 alone means mirror",
+        "chars": [
+          {
+            "c": "照",
+            "pinyin": "zhào",
+            "mm_sound": "ကျောင့်",
+            "english": "to reflect, to look at",
+            "myanmar": "ကြည့်သည်"
+          },
+          {
+            "c": "镜",
+            "pinyin": "jìng",
+            "mm_sound": "ကျင့်",
+            "english": "mirror",
+            "myanmar": "မှန်"
+          },
+          {
+            "c": "子",
+            "pinyin": "zi",
+            "mm_sound": "ဇ",
+            "english": "noun suffix",
+            "myanmar": "နာမ်နောက်ဆက်"
+          }
+        ],
+        "example": {
+          "zh": "她喜欢照镜子。",
+          "pinyin": "Tā xǐhuan zhào jìngzi.",
+          "mm_sound": "ထာ ရှီဟွမ် ကျောင့်ကျင့်ဇ။",
+          "english": "She likes looking in the mirror.",
+          "myanmar": "သူမ မှန်ကြည့်ရတာ ကြိုက်တယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "zhào jìng zǐ",
+            "to": "zhào jìngzi",
+            "why": "子 is neutral tone as a noun suffix"
+          }
+        ]
+      },
+      {
+        "hanzi": "化妆",
+        "pinyin": "huà zhuāng",
+        "english": "to put on makeup",
+        "myanmar": "အလှပြင်ပါ",
+        "mm_sound": "ဟွာကျွမ်",
+        "note": "",
+        "chars": [
+          {
+            "c": "化",
+            "pinyin": "huà",
+            "mm_sound": "ဟွာ",
+            "english": "to change, to transform",
+            "myanmar": "ပြောင်းလဲသည်"
+          },
+          {
+            "c": "妆",
+            "pinyin": "zhuāng",
+            "mm_sound": "ကျွမ်",
+            "english": "makeup",
+            "myanmar": "မိတ်ကပ်"
+          }
+        ],
+        "example": {
+          "zh": "姐姐每天化妆。",
+          "pinyin": "Jiějie měitiān huà zhuāng.",
+          "mm_sound": "ကျဲ့ကျဲ မေ့ထျန် ဟွာကျွမ်။",
+          "english": "My older sister puts on makeup every day.",
+          "myanmar": "အစ်မ နေ့တိုင်း အလှပြင်တယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "刮胡子",
+        "pinyin": "guā húzi",
+        "english": "to shave (one's beard)",
+        "myanmar": "မုတ်ဆိတ်ရိတ်ပါ",
+        "mm_sound": "ကွာဟူဇ",
+        "note": "胡子 alone means beard",
+        "chars": [
+          {
+            "c": "刮",
+            "pinyin": "guā",
+            "mm_sound": "ကွာ",
+            "english": "to scrape, to shave",
+            "myanmar": "ရိတ်သည်"
+          },
+          {
+            "c": "胡",
+            "pinyin": "hú",
+            "mm_sound": "ဟူ",
+            "english": "beard",
+            "myanmar": "မုတ်ဆိတ်"
+          },
+          {
+            "c": "子",
+            "pinyin": "zi",
+            "mm_sound": "ဇ",
+            "english": "noun suffix",
+            "myanmar": "နာမ်နောက်ဆက်"
+          }
+        ],
+        "example": {
+          "zh": "爸爸早上刮胡子。",
+          "pinyin": "Bàba zǎoshang guā húzi.",
+          "mm_sound": "ပါးပ ဇောင်ရှန် ကွာဟူဇ။",
+          "english": "Dad shaves in the morning.",
+          "myanmar": "အဖေ မနက် မုတ်ဆိတ်ရိတ်တယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "guā hú zǐ",
+            "to": "guā húzi",
+            "why": "子 is neutral tone as a noun suffix"
+          }
+        ]
+      },
+      {
+        "hanzi": "吃早餐",
+        "pinyin": "chī zǎocān",
+        "english": "to eat breakfast",
+        "myanmar": "မနက်စာစားပါ",
+        "mm_sound": "ချီဇောင်ဆန်",
+        "note": "早饭 (zǎofàn) is a common everyday synonym for 早餐",
+        "chars": [
+          {
+            "c": "吃",
+            "pinyin": "chī",
+            "mm_sound": "ချီ",
+            "english": "to eat",
+            "myanmar": "စားသည်"
+          },
+          {
+            "c": "早",
+            "pinyin": "zǎo",
+            "mm_sound": "ဇောင်",
+            "english": "early, morning",
+            "myanmar": "မနက်၊ စောသော"
+          },
+          {
+            "c": "餐",
+            "pinyin": "cān",
+            "mm_sound": "ဆန်",
+            "english": "meal",
+            "myanmar": "ထမင်းနပ်"
+          }
+        ],
+        "example": {
+          "zh": "我七点吃早餐。",
+          "pinyin": "Wǒ qī diǎn chī zǎocān.",
+          "mm_sound": "ဝေါ် ချီတျန် ချီဇောင်ဆန်။",
+          "english": "I eat breakfast at seven o'clock.",
+          "myanmar": "ကျွန်တော် ခုနစ်နာရီမှာ မနက်စာစားတယ်။"
+        },
+        "corrections": []
+      }
+    ]
   }
 ]
