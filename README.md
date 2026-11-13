@@ -90,7 +90,7 @@ Open the phone **Settings**, search **text-to-speech**, and open **Text-to-speec
 
 ### Update the app itself
 1. Upload the new **index.html** and **sw.js** (Add file → Upload files → Commit).
-2. `sw.js` line 2 must have a new version, e.g. `cs-viewer-v5` → `cs-viewer-v6`.
+2. `sw.js` line 2 must have a new version, e.g. `cs-viewer-v6` → `cs-viewer-v7`.
 3. Wait 1–10 minutes, then close and reopen the app (twice if needed).
 
 ### Files in this repo

@@ -320,6 +320,12 @@ async function readAll(l,btn){
     if(!readingAll)break;
     await pauseMs(250);
     if(myOk&&w.myanmar){const ok=await sayMyP(w.myanmar);if(ok===false){myOk=false;status('No Myanmar voice selected — reading Chinese only. Choose one in ⚙️ Settings → 🔊 Voices.',true);}}
+    if(w.example&&w.example.zh&&readingAll){
+      await pauseMs(450);if(!readingAll)break;
+      await sayZhP(w.example.zh);if(!readingAll)break;
+      await pauseMs(250);
+      if(myOk&&w.example.myanmar){const ok2=await sayMyP(w.example.myanmar);if(ok2===false)myOk=false;}
+    }
     await pauseMs(500);
   }
   readingAll=false;document.querySelectorAll('.w.reading').forEach(x=>x.classList.remove('reading'));
