@@ -2986,5 +2986,626 @@
         ]
       }
     ]
+  },
+  {
+    "id": "lmwf54dk7",
+    "title": "Basic Daily Verbs",
+    "title_my": "နေ့စဉ်သုံး အခြေခံ ကြိယာများ",
+    "date": "2026-11-13",
+    "words": [
+      {
+        "hanzi": "说",
+        "pinyin": "shuō",
+        "english": "speak; say",
+        "myanmar": "ပြောသည်",
+        "mm_sound": "ရှော",
+        "note": "说中文 = speak Chinese",
+        "chars": [],
+        "example": {
+          "zh": "你会说中文吗？",
+          "pinyin": "Nǐ huì shuō Zhōngwén ma?",
+          "mm_sound": "နီ ဟွေ့ ရှော ကျုံဝမ် မ",
+          "english": "Can you speak Chinese?",
+          "myanmar": "မင်း တရုတ်စကား ပြောတတ်လား။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "做",
+        "pinyin": "zuò",
+        "english": "do; make",
+        "myanmar": "လုပ်သည်",
+        "mm_sound": "ကျော့",
+        "note": "做饭 = cook a meal",
+        "chars": [],
+        "example": {
+          "zh": "你在做什么？",
+          "pinyin": "Nǐ zài zuò shénme?",
+          "mm_sound": "နီ ဇိုင့် ကျော့ ရှဲန်မ",
+          "english": "What are you doing?",
+          "myanmar": "မင်း ဘာလုပ်နေလဲ။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "吃",
+        "pinyin": "chī",
+        "english": "eat",
+        "myanmar": "စားသည်",
+        "mm_sound": "ချီး",
+        "note": "吃饭 = eat a meal",
+        "chars": [],
+        "example": {
+          "zh": "我想吃米饭。",
+          "pinyin": "Wǒ xiǎng chī mǐfàn.",
+          "mm_sound": "ဝေါ် ရှန် ချီး မီဖန့်",
+          "english": "I want to eat rice.",
+          "myanmar": "ကျွန်တော် ထမင်း စားချင်တယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "来",
+        "pinyin": "lái",
+        "english": "come",
+        "myanmar": "လာသည်",
+        "mm_sound": "လိုင်",
+        "note": "来这儿 = come here",
+        "chars": [],
+        "example": {
+          "zh": "你明天来吗？",
+          "pinyin": "Nǐ míngtiān lái ma?",
+          "mm_sound": "နီ မင်ထျန် လိုင် မ",
+          "english": "Are you coming tomorrow?",
+          "myanmar": "မင်း မနက်ဖြန် လာမလား။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "等",
+        "pinyin": "děng",
+        "english": "wait",
+        "myanmar": "စောင့်သည်",
+        "mm_sound": "တန်",
+        "note": "等一下 = wait a moment",
+        "chars": [],
+        "example": {
+          "zh": "请等一下。",
+          "pinyin": "Qǐng děng yíxià.",
+          "mm_sound": "ချင် တန် ရီရှား",
+          "english": "Please wait a moment.",
+          "myanmar": "ခဏ စောင့်ပါ။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "dĕng",
+            "to": "děng",
+            "why": "3rd tone uses ˇ (caron), not ˘"
+          }
+        ]
+      },
+      {
+        "hanzi": "睡觉",
+        "pinyin": "shuìjiào",
+        "english": "sleep; go to bed",
+        "myanmar": "အိပ်သည်",
+        "mm_sound": "ရွှေ့ကျောင့်",
+        "note": "Separable verb: 睡个好觉 = have a good sleep",
+        "chars": [
+          {
+            "c": "睡",
+            "pinyin": "shuì",
+            "mm_sound": "ရွှေ့",
+            "english": "sleep",
+            "myanmar": "အိပ်"
+          },
+          {
+            "c": "觉",
+            "pinyin": "jiào",
+            "mm_sound": "ကျောင့်",
+            "english": "sleep (noun)",
+            "myanmar": "အိပ်ခြင်း"
+          }
+        ],
+        "example": {
+          "zh": "我十点睡觉。",
+          "pinyin": "Wǒ shí diǎn shuìjiào.",
+          "mm_sound": "ဝေါ် ရှီ တျန် ရွှေ့ကျောင့်",
+          "english": "I go to bed at ten o'clock.",
+          "myanmar": "ကျွန်တော် ဆယ်နာရီမှာ အိပ်တယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "洗澡",
+        "pinyin": "xǐzǎo",
+        "english": "take a bath / shower",
+        "myanmar": "ရေချိုးသည်",
+        "mm_sound": "ရှီးကျောင်",
+        "note": "Separable verb: 洗个澡 = take a quick bath",
+        "chars": [
+          {
+            "c": "洗",
+            "pinyin": "xǐ",
+            "mm_sound": "ရှီး",
+            "english": "wash",
+            "myanmar": "ဆေး၊ လျှော်"
+          },
+          {
+            "c": "澡",
+            "pinyin": "zǎo",
+            "mm_sound": "ကျောင်",
+            "english": "bath",
+            "myanmar": "ရေချိုးခြင်း"
+          }
+        ],
+        "example": {
+          "zh": "我每天洗澡。",
+          "pinyin": "Wǒ měitiān xǐzǎo.",
+          "mm_sound": "ဝေါ် မေးထျန် ရှီးကျောင်",
+          "english": "I take a bath every day.",
+          "myanmar": "ကျွန်တော် နေ့တိုင်း ရေချိုးတယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "Xĭ zăo",
+            "to": "xǐzǎo",
+            "why": "3rd tone uses ˇ; lowercase; written as one word"
+          }
+        ]
+      },
+      {
+        "hanzi": "工作",
+        "pinyin": "gōngzuò",
+        "english": "job; work",
+        "myanmar": "အလုပ်",
+        "mm_sound": "ကုန်းကျော့",
+        "note": "Both noun (a job) and verb (to work)",
+        "chars": [
+          {
+            "c": "工",
+            "pinyin": "gōng",
+            "mm_sound": "ကုန်း",
+            "english": "work; labor",
+            "myanmar": "အလုပ်၊ လုပ်အား"
+          },
+          {
+            "c": "作",
+            "pinyin": "zuò",
+            "mm_sound": "ကျော့",
+            "english": "do; make",
+            "myanmar": "လုပ်"
+          }
+        ],
+        "example": {
+          "zh": "你在哪儿工作？",
+          "pinyin": "Nǐ zài nǎr gōngzuò?",
+          "mm_sound": "နီ ဇိုင့် နာ့ ကုန်းကျော့",
+          "english": "Where do you work?",
+          "myanmar": "မင်း ဘယ်မှာ အလုပ်လုပ်လဲ။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "gòngzuò",
+            "to": "gōngzuò",
+            "why": "工 is 1st tone (ō), not 4th"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lmwf557kj",
+    "title": "Basic Verbs and 已经……了 (Already Done)",
+    "title_my": "အခြေခံကြိယာများနှင့် 已经……了 (ပြီးပြီ)",
+    "date": "2026-11-13",
+    "words": [
+      {
+        "hanzi": "听",
+        "pinyin": "tīng",
+        "english": "to listen",
+        "myanmar": "နားထောင်သည်",
+        "mm_sound": "ထင်း",
+        "note": "听音乐 = listen to music",
+        "chars": [],
+        "example": {
+          "zh": "我喜欢听音乐。",
+          "pinyin": "Wǒ xǐhuan tīng yīnyuè.",
+          "mm_sound": "ဝေါ် ရှီဟွမ် ထင်း ယင်ယွဲ့",
+          "english": "I like listening to music.",
+          "myanmar": "ကျွန်တော် သီချင်းနားထောင်ရတာ ကြိုက်တယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "说",
+        "pinyin": "shuō",
+        "english": "to speak; to say",
+        "myanmar": "ပြောသည်",
+        "mm_sound": "ရှော",
+        "note": "说中文 = speak Chinese",
+        "chars": [],
+        "example": {
+          "zh": "请你再说一遍。",
+          "pinyin": "Qǐng nǐ zài shuō yí biàn.",
+          "mm_sound": "ချင်း နီ ဇိုင် ရှော ယီ ပိန်",
+          "english": "Please say it again.",
+          "myanmar": "ထပ်ပြောပေးပါ။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "去",
+        "pinyin": "qù",
+        "english": "to go",
+        "myanmar": "သွားသည်",
+        "mm_sound": "ချွီ",
+        "note": "去 + place: 去学校 = go to school",
+        "chars": [],
+        "example": {
+          "zh": "你去哪儿？",
+          "pinyin": "Nǐ qù nǎr?",
+          "mm_sound": "နီ ချွီ နာရ်",
+          "english": "Where are you going?",
+          "myanmar": "မင်း ဘယ်သွားမလဲ။"
+        },
+        "corrections": [
+          {
+            "field": "mm_sound",
+            "from": "ချိ",
+            "to": "ချွီ",
+            "why": "qù has the ü sound, unlike chī"
+          }
+        ]
+      },
+      {
+        "hanzi": "吃",
+        "pinyin": "chī",
+        "english": "to eat",
+        "myanmar": "စားသည်",
+        "mm_sound": "ချီး",
+        "note": "吃饭 = eat a meal",
+        "chars": [],
+        "example": {
+          "zh": "我想吃米饭。",
+          "pinyin": "Wǒ xiǎng chī mǐfàn.",
+          "mm_sound": "ဝေါ် ရှန် ချီး မီဖန်",
+          "english": "I want to eat rice.",
+          "myanmar": "ကျွန်တော် ထမင်းစားချင်တယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "喝",
+        "pinyin": "hē",
+        "english": "to drink",
+        "myanmar": "သောက်သည်",
+        "mm_sound": "ဟဲ",
+        "note": "喝水 = drink water",
+        "chars": [],
+        "example": {
+          "zh": "你喝茶吗？",
+          "pinyin": "Nǐ hē chá ma?",
+          "mm_sound": "နီ ဟဲ ချား မ",
+          "english": "Do you drink tea?",
+          "myanmar": "မင်း လက်ဖက်ရည်သောက်မလား။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "听我说",
+        "pinyin": "tīng wǒ shuō",
+        "english": "Listen to me",
+        "myanmar": "ငါပြောတာနားထောင်ပါ",
+        "mm_sound": "ထင်း ဝေါ် ရှော",
+        "note": "Common phrase used before explaining something",
+        "chars": [
+          {
+            "c": "听",
+            "pinyin": "tīng",
+            "mm_sound": "ထင်း",
+            "english": "listen",
+            "myanmar": "နားထောင်"
+          },
+          {
+            "c": "我",
+            "pinyin": "wǒ",
+            "mm_sound": "ဝေါ်",
+            "english": "I; me",
+            "myanmar": "ငါ / ကျွန်တော်"
+          },
+          {
+            "c": "说",
+            "pinyin": "shuō",
+            "mm_sound": "ရှော",
+            "english": "speak; say",
+            "myanmar": "ပြော"
+          }
+        ],
+        "example": {
+          "zh": "妈妈，你听我说。",
+          "pinyin": "Māma, nǐ tīng wǒ shuō.",
+          "mm_sound": "မားမ၊ နီ ထင်း ဝေါ် ရှော",
+          "english": "Mom, listen to me.",
+          "myanmar": "မေမေ၊ ကျွန်တော်ပြောတာ နားထောင်ပါ။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "我已经说了",
+        "pinyin": "wǒ yǐjīng shuō le",
+        "english": "I have already said it",
+        "myanmar": "ငါပြောပြီးပြီ",
+        "mm_sound": "ဝေါ် ယိကျင်း ရှော လဲ",
+        "note": "Pattern: 已经 + verb + 了",
+        "chars": [
+          {
+            "c": "我",
+            "pinyin": "wǒ",
+            "mm_sound": "ဝေါ်",
+            "english": "I",
+            "myanmar": "ငါ"
+          },
+          {
+            "c": "已",
+            "pinyin": "yǐ",
+            "mm_sound": "ယိ",
+            "english": "already (part of 已经)",
+            "myanmar": "ပြီးပြီ (已经 ၏ အစိတ်)"
+          },
+          {
+            "c": "经",
+            "pinyin": "jīng",
+            "mm_sound": "ကျင်း",
+            "english": "pass through (part of 已经)",
+            "myanmar": "ဖြတ်သန်း (已经 ၏ အစိတ်)"
+          },
+          {
+            "c": "说",
+            "pinyin": "shuō",
+            "mm_sound": "ရှော",
+            "english": "say",
+            "myanmar": "ပြော"
+          },
+          {
+            "c": "了",
+            "pinyin": "le",
+            "mm_sound": "လဲ",
+            "english": "particle: completed action",
+            "myanmar": "ပြီးစီးကြောင်းပြ ပစ္စည်း"
+          }
+        ],
+        "example": {
+          "zh": "我已经说了，他不听。",
+          "pinyin": "Wǒ yǐjīng shuō le, tā bù tīng.",
+          "mm_sound": "ဝေါ် ယိကျင်း ရှော လဲ၊ ထား ပု ထင်း",
+          "english": "I already said it, but he doesn't listen.",
+          "myanmar": "ငါပြောပြီးပြီ၊ သူ နားမထောင်ဘူး။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "我已经去了",
+        "pinyin": "wǒ yǐjīng qù le",
+        "english": "I have already gone",
+        "myanmar": "ငါသွားပြီးပြီ",
+        "mm_sound": "ဝေါ် ယိကျင်း ချွီ လဲ",
+        "note": "Pattern: 已经 + verb + 了",
+        "chars": [
+          {
+            "c": "我",
+            "pinyin": "wǒ",
+            "mm_sound": "ဝေါ်",
+            "english": "I",
+            "myanmar": "ငါ"
+          },
+          {
+            "c": "已",
+            "pinyin": "yǐ",
+            "mm_sound": "ယိ",
+            "english": "already (part of 已经)",
+            "myanmar": "ပြီးပြီ (已经 ၏ အစိတ်)"
+          },
+          {
+            "c": "经",
+            "pinyin": "jīng",
+            "mm_sound": "ကျင်း",
+            "english": "pass through (part of 已经)",
+            "myanmar": "ဖြတ်သန်း (已经 ၏ အစိတ်)"
+          },
+          {
+            "c": "去",
+            "pinyin": "qù",
+            "mm_sound": "ချွီ",
+            "english": "go",
+            "myanmar": "သွား"
+          },
+          {
+            "c": "了",
+            "pinyin": "le",
+            "mm_sound": "လဲ",
+            "english": "particle: completed action",
+            "myanmar": "ပြီးစီးကြောင်းပြ ပစ္စည်း"
+          }
+        ],
+        "example": {
+          "zh": "你去了吗？我已经去了。",
+          "pinyin": "Nǐ qù le ma? Wǒ yǐjīng qù le.",
+          "mm_sound": "နီ ချွီ လဲ မ? ဝေါ် ယိကျင်း ချွီ လဲ",
+          "english": "Did you go? I already went.",
+          "myanmar": "မင်းသွားပြီလား။ ငါသွားပြီးပြီ။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "wǒ yǐjīngqù le",
+            "to": "wǒ yǐjīng qù le",
+            "why": "separate words with a space"
+          }
+        ]
+      },
+      {
+        "hanzi": "我已经吃了",
+        "pinyin": "wǒ yǐjīng chī le",
+        "english": "I have already eaten",
+        "myanmar": "ငါစားပြီးပြီ",
+        "mm_sound": "ဝေါ် ယိကျင်း ချီး လဲ",
+        "note": "Polite reply when offered food",
+        "chars": [
+          {
+            "c": "我",
+            "pinyin": "wǒ",
+            "mm_sound": "ဝေါ်",
+            "english": "I",
+            "myanmar": "ငါ"
+          },
+          {
+            "c": "已",
+            "pinyin": "yǐ",
+            "mm_sound": "ယိ",
+            "english": "already (part of 已经)",
+            "myanmar": "ပြီးပြီ (已经 ၏ အစိတ်)"
+          },
+          {
+            "c": "经",
+            "pinyin": "jīng",
+            "mm_sound": "ကျင်း",
+            "english": "pass through (part of 已经)",
+            "myanmar": "ဖြတ်သန်း (已经 ၏ အစိတ်)"
+          },
+          {
+            "c": "吃",
+            "pinyin": "chī",
+            "mm_sound": "ချီး",
+            "english": "eat",
+            "myanmar": "စား"
+          },
+          {
+            "c": "了",
+            "pinyin": "le",
+            "mm_sound": "လဲ",
+            "english": "particle: completed action",
+            "myanmar": "ပြီးစီးကြောင်းပြ ပစ္စည်း"
+          }
+        ],
+        "example": {
+          "zh": "我已经吃了，谢谢。",
+          "pinyin": "Wǒ yǐjīng chī le, xièxie.",
+          "mm_sound": "ဝေါ် ယိကျင်း ချီး လဲ၊ ရှဲရှဲ",
+          "english": "I've already eaten, thanks.",
+          "myanmar": "ကျွန်တော် စားပြီးပြီ၊ ကျေးဇူးပါ။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "wǒ yǐjīngchī le",
+            "to": "wǒ yǐjīng chī le",
+            "why": "separate words with a space"
+          }
+        ]
+      },
+      {
+        "hanzi": "我已经喝了",
+        "pinyin": "wǒ yǐjīng hē le",
+        "english": "I have already drunk (it)",
+        "myanmar": "ငါသောက်ပြီးပြီ",
+        "mm_sound": "ဝေါ် ယိကျင်း ဟဲ လဲ",
+        "note": "Pattern: 已经 + verb + 了",
+        "chars": [
+          {
+            "c": "我",
+            "pinyin": "wǒ",
+            "mm_sound": "ဝေါ်",
+            "english": "I",
+            "myanmar": "ငါ"
+          },
+          {
+            "c": "已",
+            "pinyin": "yǐ",
+            "mm_sound": "ယိ",
+            "english": "already (part of 已经)",
+            "myanmar": "ပြီးပြီ (已经 ၏ အစိတ်)"
+          },
+          {
+            "c": "经",
+            "pinyin": "jīng",
+            "mm_sound": "ကျင်း",
+            "english": "pass through (part of 已经)",
+            "myanmar": "ဖြတ်သန်း (已经 ၏ အစိတ်)"
+          },
+          {
+            "c": "喝",
+            "pinyin": "hē",
+            "mm_sound": "ဟဲ",
+            "english": "drink",
+            "myanmar": "သောက်"
+          },
+          {
+            "c": "了",
+            "pinyin": "le",
+            "mm_sound": "လဲ",
+            "english": "particle: completed action",
+            "myanmar": "ပြီးစီးကြောင်းပြ ပစ္စည်း"
+          }
+        ],
+        "example": {
+          "zh": "我已经喝了一杯水。",
+          "pinyin": "Wǒ yǐjīng hē le yì bēi shuǐ.",
+          "mm_sound": "ဝေါ် ယိကျင်း ဟဲ လဲ ယီ ပေ ရွှေ",
+          "english": "I've already drunk a glass of water.",
+          "myanmar": "ကျွန်တော် ရေတစ်ခွက် သောက်ပြီးပြီ။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "wǒ yǐjīnghē le",
+            "to": "wǒ yǐjīng hē le",
+            "why": "separate words with a space"
+          }
+        ]
+      },
+      {
+        "hanzi": "已经……了",
+        "pinyin": "yǐjīng……le",
+        "english": "already (done)",
+        "myanmar": "ပြီးပြီ",
+        "mm_sound": "ယိကျင်း……လဲ",
+        "note": "Put the verb in the middle: 已经 + verb + 了",
+        "chars": [
+          {
+            "c": "已",
+            "pinyin": "yǐ",
+            "mm_sound": "ယိ",
+            "english": "already (part of 已经)",
+            "myanmar": "ပြီးပြီ (已经 ၏ အစိတ်)"
+          },
+          {
+            "c": "经",
+            "pinyin": "jīng",
+            "mm_sound": "ကျင်း",
+            "english": "pass through (part of 已经)",
+            "myanmar": "ဖြတ်သန်း (已经 ၏ အစိတ်)"
+          },
+          {
+            "c": "了",
+            "pinyin": "le",
+            "mm_sound": "လဲ",
+            "english": "particle: completed action",
+            "myanmar": "ပြီးစီးကြောင်းပြ ပစ္စည်း"
+          }
+        ],
+        "example": {
+          "zh": "他已经来了。",
+          "pinyin": "Tā yǐjīng lái le.",
+          "mm_sound": "ထား ယိကျင်း လိုင် လဲ",
+          "english": "He has already come.",
+          "myanmar": "သူ ရောက်လာပြီးပြီ။"
+        },
+        "corrections": []
+      }
+    ]
   }
 ]
