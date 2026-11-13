@@ -101,6 +101,15 @@ footer.credit b{color:var(--red)}
 .toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,120px);background:var(--ink);color:#fff;border-radius:999px;padding:10px 12px 10px 18px;display:flex;gap:12px;align-items:center;font-size:14px;transition:transform .2s;z-index:20;max-width:92vw}
 .toast.on{transform:translate(-50%,0)}
 .toast button{border:none;background:#fff;color:var(--ink);border-radius:999px;padding:6px 12px;font:inherit;font-weight:600;cursor:pointer}
+.spkmm{border:none;background:#fff6e5;color:#7a5414;border-radius:999px;padding:2px 9px;font-size:12px;cursor:pointer;margin-top:3px;font-family:Inter,'Noto Sans Myanmar',sans-serif}
+.spkmm:hover{background:#ffeccc}
+.w.reading{outline:3px solid var(--jade);outline-offset:2px}
+.hbtns{align-items:center;flex-wrap:wrap}
+button.chip.refresh{display:flex;flex-direction:column;align-items:center;line-height:1.25;padding:5px 14px;border-color:var(--jade);color:var(--jade);background:var(--jade-soft)}
+button.chip.refresh .rt{font-weight:600}
+button.chip.refresh .rs{font-size:10.5px;line-height:1.5;opacity:.9}
+button.chip.refresh.busy .rt::before{content:'';display:inline-block;width:10px;height:10px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:s 1s linear infinite;margin-right:6px;vertical-align:-1px}
+@media(max-width:820px){.hbtns{margin-left:0;width:100%}}
 .empty{color:var(--muted);text-align:center;padding:40px 10px}
 [contenteditable=true]{outline:1px dashed var(--gold);border-radius:4px;padding:0 3px}
 .modal{position:fixed;inset:0;background:rgba(20,18,15,.6);display:none;align-items:center;justify-content:center;padding:20px;z-index:10}
@@ -120,7 +129,7 @@ footer.credit b{color:var(--red)}
   <div class="logo">学</div>
   <div><h1>Chinese Study Notebook · တရုတ်စာ လေ့ကျင့်စာအုပ်</h1>
   <p>Learn Chinese: 汉字 · pinyin · English · မြန်မာ meaning · မြန်မာ sound · example sentences.</p></div>
-  <div class="hbtns"><button class="chip primary" id="installBtn" style="display:none">⬇ Install app</button><button class="chip" id="setBtn">⚙️ Settings</button></div>
+  <div class="hbtns"><button class="chip primary" id="installBtn" style="display:none">⬇ Install app</button><button class="chip refresh" id="topRefresh" title="Check for new lessons · သင်ခန်းစာအသစ် ရှိမရှိ စစ်ရန်"><span class="rt">🔄 Refresh</span><span class="rs my">Check new lessons · သင်ခန်းစာအသစ် စစ်ရန်</span></button><button class="chip" id="setBtn">⚙️ Settings</button></div>
 </header>
 <main>
   <aside>
@@ -189,7 +198,7 @@ function renderPanel(){
          <button class="chip ${hidden.hz?'on':''}" data-h="hz">Hide 汉字</button>
          <button class="chip ${hidden.py?'on':''}" data-h="py">Hide pinyin</button>
          <button class="chip ${hidden.mean?'on':''}" data-h="mean">Hide meaning</button>
-         <button class="chip" id="readAll">🔊 Read all</button>
+         <button class="chip" id="readAll">${readingAll?'⏹ Stop':'🔊 Read all (中→မြန်မာ)'}</button>
          ${l.words.some(w=>isKnown(l,w))?`<button class="chip" id="unhideLesson">↩ Show ${l.words.filter(w=>isKnown(l,w)).length} hidden word${l.words.filter(w=>isKnown(l,w)).length>1?'s':''}</button>`:''}
          ${artifactApi?`<button class="chip" id="editBtn">${editing?'💾 Save edits':'✏️ Edit'}</button>
          ${editing?'<button class="chip" id="cancelEdit">Cancel</button>':''}
@@ -215,6 +224,7 @@ function renderPanel(){
        <div class="py ${h('py')}" data-f="pinyin">${esc(w.pinyin)}</div>
        <div class="en ${h('mean')}" data-f="english">${esc(w.english)}</div>
        <div class="mm my ${h('mean')}" data-f="myanmar">${esc(w.myanmar)}</div>
+       ${w.myanmar?`<button class="spkmm" data-saymm="${esc(w.myanmar)}" title="Hear the meaning in Myanmar">🔊 မြန်မာ</button>`:''}
        <div class="snd my"><span>Myanmar sound · အသံထွက်</span><b data-f="mm_sound">${esc(w.mm_sound)}</b></div>
        ${w.note||editing?`<div class="note" data-f="note">${esc(w.note||'')}</div>`:''}
        ${w.example?`<div class="ex"><div class="lab">Example · ဥပမာ<button class="spk2" data-say="${esc(w.example.zh)}" title="Listen to sentence">🔊</button></div>
@@ -222,12 +232,14 @@ function renderPanel(){
          <div class="epy ${h('py')}" data-f="example.pinyin">${esc(w.example.pinyin)}</div>
          <div class="esnd my" data-f="example.mm_sound">🔉 ${esc(w.example.mm_sound)}</div>
          <div class="een ${h('mean')}" data-f="example.english">${esc(w.example.english)}</div>
-         <div class="emm my ${h('mean')}" data-f="example.myanmar">${esc(w.example.myanmar)}</div></div>`:''}
+         <div class="emm my ${h('mean')}" data-f="example.myanmar">${esc(w.example.myanmar)}</div>
+         ${w.example.myanmar?`<button class="spkmm" data-saymm="${esc(w.example.myanmar)}" title="Hear the sentence meaning in Myanmar">🔊 မြန်မာ</button>`:''}</div>`:''}
        ${(w.corrections&&w.corrections.length)?`<div class="fix">✓ Auto-corrected:${w.corrections.map(c=>`<br><b>${esc(FIELD[c.field]||c.field)}:</b> <s>${esc(c.from)}</s> → ${esc(c.to)}${c.why?' · '+esc(c.why):''}`).join('')}</div>`:''}
      </div>`).join('')}</div>`;
   p.querySelectorAll('[data-h]').forEach(b=>b.onclick=()=>{hidden[b.dataset.h]=!hidden[b.dataset.h];renderPanel();});
   p.querySelectorAll('.hide').forEach(e=>e.onclick=()=>e.classList.remove('hide'));
   p.querySelectorAll('.spk,.spk2,.ch').forEach(b=>b.onclick=()=>say(b.dataset.say));
+  p.querySelectorAll('[data-saymm]').forEach(b=>b.onclick=()=>sayMy(b.dataset.saymm));
   p.classList.toggle('zhonly',!!hidden.zhonly);
   p.querySelectorAll('[data-del]').forEach(b=>b.onclick=()=>{
     if(!b.classList.contains('c')){b.classList.add('c');b.textContent='Delete?';setTimeout(()=>{if(b.isConnected){b.classList.remove('c');b.textContent='✕';}},3000);return;}
@@ -235,7 +247,7 @@ function renderPanel(){
   });
   const ul=$('unhideLesson'); if(ul) ul.onclick=()=>{l.words.forEach(w=>knownRemove(l,w));renderPanel();showUndo('All words in this lesson are back ✓');};
   $('fcBtn').onclick=()=>openFC(Object.assign({},l,{words:l.words.filter(w=>!isKnown(l,w))}));
-  $('readAll').onclick=()=>say(l.words.filter(w=>!isKnown(l,w)).map(w=>w.hanzi).join('。'));
+  $('readAll').onclick=()=>readAll(l,$('readAll'));
   const th=$('thumb'); if(th) th.onclick=()=>{$('zoomImg').src=l.img||l.thumb;$('zoom').classList.add('open');};
   if(editing){p.querySelectorAll('[data-f]').forEach(e=>e.contentEditable='true');}
   const eb=$('editBtn'); if(eb) eb.onclick=()=>{ if(editing){saveEdits(l);} else {editing=true;renderPanel();} };
@@ -271,6 +283,35 @@ function confirmDelete(l){
 let zhVoice=null;
 function pickVoice(){try{const v=speechSynthesis.getVoices();zhVoice=v.find(x=>/^zh(-|_)?(CN|Hans)?/i.test(x.lang))||v.find(x=>/^zh/i.test(x.lang))||null;}catch(e){}}
 try{pickVoice();speechSynthesis.onvoiceschanged=pickVoice;}catch(e){}
+let myVoice=null;
+function pickMy(){try{myVoice=speechSynthesis.getVoices().find(v=>/^my([-_]|$)/i.test(v.lang)||/burmese|myanmar/i.test(v.name))||null;}catch(e){}}
+async function sayMy(text){
+  pickMy();
+  if(myVoice){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.voice=myVoice;u.lang=myVoice.lang;u.rate=.9;speechSynthesis.speak(u);return;}catch(e){}}
+  status('No Myanmar (Burmese) voice was found on this device. On Android you can try: Settings → Text-to-speech → Google speech engine → Install voice data → Myanmar, if it is offered.',true);
+}
+let readingAll=false;
+const pauseMs=ms=>new Promise(r=>setTimeout(r,ms));
+function speakP(text,voice,lang,rate){return new Promise(res=>{try{const u=new SpeechSynthesisUtterance(text);if(voice)u.voice=voice;u.lang=lang;u.rate=rate;let done=false;const fin=()=>{if(!done){done=true;res();}};u.onend=fin;u.onerror=fin;speechSynthesis.speak(u);setTimeout(fin,Math.max(4000,text.length*450));}catch(e){res();}});}
+async function sayZhP(text){if(zhVoice)return speakP(text,zhVoice,zhVoice.lang,.8);if(ttsApi){try{await ttsApi.speak(text,{language:'zh-CN',rate:.85});return;}catch(e){}}return speakP(text,null,'zh-CN',.8);}
+async function sayMyP(text){pickMy();if(myVoice)return speakP(text,myVoice,myVoice.lang,.9);if(ttsApi){try{await ttsApi.speak(text,{language:'my'});return;}catch(e){}}return false;}
+async function readAll(l,btn){
+  if(readingAll){readingAll=false;try{speechSynthesis.cancel();}catch(e){}try{ttsApi&&ttsApi.stop();}catch(e){}if(btn.isConnected)btn.textContent='🔊 Read all (中→မြန်မာ)';document.querySelectorAll('.w.reading').forEach(x=>x.classList.remove('reading'));return;}
+  readingAll=true;btn.textContent='⏹ Stop';let myOk=true;
+  const ws=l.words.map((w,i)=>[w,i]).filter(([w])=>!(typeof isKnown==='function'&&isKnown(l,w)));
+  for(const [w,i] of ws){
+    if(!readingAll)break;
+    document.querySelectorAll('.w.reading').forEach(x=>x.classList.remove('reading'));
+    const card=document.querySelector('.w[data-i="'+i+'"]');if(card){card.classList.add('reading');card.scrollIntoView({block:'nearest',behavior:'smooth'});}
+    await sayZhP(w.hanzi);
+    if(!readingAll)break;
+    await pauseMs(250);
+    if(myOk&&w.myanmar){const ok=await sayMyP(w.myanmar);if(ok===false){myOk=false;status('No Myanmar voice on this device — reading Chinese only.',true);}}
+    await pauseMs(500);
+  }
+  readingAll=false;document.querySelectorAll('.w.reading').forEach(x=>x.classList.remove('reading'));
+  const b2=$('readAll');if(b2)b2.textContent='🔊 Read all (中→မြန်မာ)';
+}
 async function say(text){
   if(zhVoice){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.voice=zhVoice;u.lang=zhVoice.lang;u.rate=.8;speechSynthesis.speak(u);return;}catch(e){}}
   if(ttsApi){try{await ttsApi.speak(text,{language:'zh-CN',rate:.85});return;}catch(e){ if(e&&e.code==='not_granted') ttsApi=null; }}
@@ -508,6 +549,12 @@ $('setBtn').onclick=openSettings;
 $('closeSet').onclick=()=>$('setModal').classList.remove('open');
 $('setModal').onclick=e=>{if(e.target.id==='setModal')e.target.classList.remove('open');};
 $('unhideBtn').onclick=()=>{known=new Set();try{localStorage.removeItem('cs-known');}catch(e){}render();setStatus('All words are shown again ✓');};
+$('topRefresh').onclick=async()=>{const b=$('topRefresh');if(b.classList.contains('busy'))return;b.classList.add('busy');
+  const before=new Set(state.lessons.map(l=>l.id));const n=await loadRemote();b.classList.remove('busy');
+  if(n===null){showUndo('Offline — showing saved lessons · အင်တာနက်မရှိပါ');return;}
+  const added=state.lessons.filter(l=>!before.has(l.id)).length;
+  showUndo(added?(added+' new lesson'+(added>1?'s':'')+' ✓ · သင်ခန်းစာအသစ် '+added+' ခု'):'Up to date ✓ · နောက်ဆုံးအခြေအနေ ဖြစ်ပါပြီ');
+  if(added){const nl=state.lessons.find(l=>!before.has(l.id));if(nl){current=nl.id;render();}}};
 $('refreshBtn').onclick=async()=>{setStatus('Checking…');const n=await loadRemote(true);setStatus(n===null?'Offline — showing saved lessons.':'Up to date ✓ ('+state.lessons.length+' lessons)');};
 
 // ---------- install ----------
