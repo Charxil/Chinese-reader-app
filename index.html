@@ -112,6 +112,8 @@ button.chip.refresh .rs{font-size:10.5px;line-height:1.5;opacity:.9}
 button.chip.refresh.busy .rt::before{content:'';display:inline-block;width:10px;height:10px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:s 1s linear infinite;margin-right:6px;vertical-align:-1px}
 @media(max-width:820px){.hbtns{margin-left:0;width:100%}}
 .vsel{flex:1;min-width:0;font:inherit;font-size:13px;padding:7px 8px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.pager{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:6px;font-size:12px;color:var(--muted)}
+button.chip:disabled{opacity:.35;cursor:default}
 .empty{color:var(--muted);text-align:center;padding:40px 10px}
 [contenteditable=true]{outline:1px dashed var(--gold);border-radius:4px;padding:0 3px}
 .modal{position:fixed;inset:0;background:rgba(20,18,15,.6);display:none;align-items:center;justify-content:center;padding:20px;z-index:10}
@@ -180,14 +182,21 @@ let editing = false, artifactApi = null, sampleApi = null, ttsApi = null, busy=f
 const $ = id => document.getElementById(id);
 const esc = s => String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
+const PER_PAGE=5; let listPage=-1;   // -1 = show the page of the open lesson
 function renderList(){
   const el=$('lessons');
   if(!state.lessons.length){el.innerHTML='';return;}
-  el.innerHTML='<h3>Lessons ('+state.lessons.length+')</h3>'+state.lessons.map((l,i)=>
+  const pages=Math.ceil(state.lessons.length/PER_PAGE);
+  if(listPage<0||listPage>=pages){const ci=Math.max(0,state.lessons.findIndex(x=>x.id===current));listPage=Math.floor(ci/PER_PAGE);}
+  const start=listPage*PER_PAGE;
+  const pager=pages>1?`<div class="pager"><button class="chip" id="pgPrev" ${listPage===0?'disabled':''}>◀ Prev</button><span>Page ${listPage+1} / ${pages} · စာမျက်နှာ</span><button class="chip" id="pgNext" ${listPage>=pages-1?'disabled':''}>Next ▶</button></div>`:'';
+  el.innerHTML='<h3>Lessons ('+state.lessons.length+')</h3>'+state.lessons.slice(start,start+PER_PAGE).map((l,k)=>{const i=start+k;return (
     `<button class="lbtn ${l.id===current?'on':''}" data-id="${l.id}">
       ${l.thumb?`<img src="${l.thumb}" alt="">`:'<div class="ph">学</div>'}
       <div><div class="t">${i+1}. ${esc(l.title)}</div><div class="s my">${esc(l.title_my||'')}</div><div class="s">${l.words.length} words · ${esc(l.date||'')}</div></div>
-    </button>`).join('');
+    </button>`);}).join('')+pager;
+  const pp=$('pgPrev'); if(pp) pp.onclick=()=>{if(listPage>0){listPage--;renderList();}};
+  const pn=$('pgNext'); if(pn) pn.onclick=()=>{if(listPage<pages-1){listPage++;renderList();}};
   el.querySelectorAll('.lbtn').forEach(b=>b.onclick=()=>{current=b.dataset.id;editing=false;location.hash=current;render();if(innerWidth<820)$('panel').scrollIntoView({behavior:'smooth'});});
 }
 function renderPanel(){
@@ -598,7 +607,7 @@ $('topRefresh').onclick=async()=>{const b=$('topRefresh');if(b.classList.contain
   if(n===null){showUndo('Offline — showing saved lessons · အင်တာနက်မရှိပါ');return;}
   const added=state.lessons.filter(l=>!before.has(l.id)).length;
   showUndo(added?(added+' new lesson'+(added>1?'s':'')+' ✓ · သင်ခန်းစာအသစ် '+added+' ခု'):'Up to date ✓ · နောက်ဆုံးအခြေအနေ ဖြစ်ပါပြီ');
-  if(added){const nl=state.lessons.find(l=>!before.has(l.id));if(nl){current=nl.id;render();}}};
+  if(added){const nl=state.lessons.find(l=>!before.has(l.id));if(nl){current=nl.id;listPage=-1;render();}}};
 $('refreshBtn').onclick=async()=>{setStatus('Checking…');const n=await loadRemote(true);setStatus(n===null?'Offline — showing saved lessons.':'Up to date ✓ ('+state.lessons.length+' lessons)');};
 
 // ---------- install ----------
@@ -631,7 +640,7 @@ render();
   await loadRemote();
   if(navigator.storage&&navigator.storage.persist)navigator.storage.persist().catch(()=>{});
 })();
-window.addEventListener('hashchange',()=>{const h=location.hash.replace('#','');if(h&&h!==current&&state.lessons.some(l=>l.id===h)){current=h;render();}});
+window.addEventListener('hashchange',()=>{const h=location.hash.replace('#','');if(h&&h!==current&&state.lessons.some(l=>l.id===h)){current=h;listPage=-1;render();}});
 })();
 </script>
 </body>

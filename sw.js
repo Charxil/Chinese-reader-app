@@ -1,5 +1,5 @@
 // Chinese Study Notebook — offline support. Change VERSION whenever you upload a new index.html.
-const VERSION = 'cs-viewer-v7';
+const VERSION = 'cs-viewer-v8';
 const SHELL = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './icon-maskable-512.png'];
 
 self.addEventListener('install', e => {
