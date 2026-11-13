@@ -110,6 +110,7 @@ button.chip.refresh .rt{font-weight:600}
 button.chip.refresh .rs{font-size:10.5px;line-height:1.5;opacity:.9}
 button.chip.refresh.busy .rt::before{content:'';display:inline-block;width:10px;height:10px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:s 1s linear infinite;margin-right:6px;vertical-align:-1px}
 @media(max-width:820px){.hbtns{margin-left:0;width:100%}}
+.vsel{flex:1;min-width:0;font:inherit;font-size:13px;padding:7px 8px;border:1px solid var(--line);border-radius:10px;background:#fff}
 .empty{color:var(--muted);text-align:center;padding:40px 10px}
 [contenteditable=true]{outline:1px dashed var(--gold);border-radius:4px;padding:0 3px}
 .modal{position:fixed;inset:0;background:rgba(20,18,15,.6);display:none;align-items:center;justify-content:center;padding:20px;z-index:10}
@@ -155,6 +156,13 @@ button.chip.refresh.busy .rt::before{content:'';display:inline-block;width:10px;
   <p>Words you hid with ✕ (because you already know them). Only on this phone.</p>
   <div class="row"><button class="chip" id="unhideBtn">Show all hidden words again</button></div>
   <div class="status" id="setStatus"></div>
+  <h4>🔊 Voices · အသံ</h4>
+  <p>If the Myanmar meaning is not spoken, choose your Myanmar voice here (e.g. SM Myanmar TTS) and press ▶ to test. · မြန်မာအသံ မထွက်ပါက ဤနေရာတွင် ရွေးပါ။</p>
+  <label style="display:block">Chinese voice · 中文</label>
+  <div class="row" style="margin-top:2px"><select id="zhSel" class="vsel"></select><button class="chip" id="zhTest">▶</button></div>
+  <label style="display:block;margin-top:10px">Myanmar voice · မြန်မာ</label>
+  <div class="row" style="margin-top:2px"><select id="mySel" class="vsel"></select><button class="chip" id="myTest">▶</button></div>
+  <small id="voiceInfo"></small>
   <h4>📱 Install on your phone</h4>
   <p><b>Android (Chrome):</b> tap ⬇ Install app at the top, or menu ⋮ → Install app / Add to Home screen.<br><b>iPhone (Safari):</b> tap Share → Add to Home Screen.</p>
   <div class="row"><button class="chip" id="closeSet">Close</button></div>
@@ -281,20 +289,25 @@ function confirmDelete(l){
 
 // ---------- speech ----------
 let zhVoice=null;
-function pickVoice(){try{const v=speechSynthesis.getVoices();zhVoice=v.find(x=>/^zh(-|_)?(CN|Hans)?/i.test(x.lang))||v.find(x=>/^zh/i.test(x.lang))||null;}catch(e){}}
+let vpref={zh:'',my:''};try{Object.assign(vpref,JSON.parse(localStorage.getItem('cs-voices')||'{}'));}catch(e){}
+const allVoices=()=>{try{return speechSynthesis.getVoices()||[];}catch(e){return [];}};
+const vid=v=>v.name+'|'+v.lang;
+const isMyVoice=v=>/^(my|mya|bur|mm)([-_]|$)/i.test(v.lang||'')||/burmese|myanmar|mya|zawgyi|unicode.*mm|sm\s*myanmar|sao\s*mai/i.test(v.name||'');
+function pickVoice(){try{const v=allVoices();const pv=vpref.zh&&v.find(x=>vid(x)===vpref.zh);zhVoice=pv||v.find(x=>/^zh(-|_)?(CN|Hans)?/i.test(x.lang))||v.find(x=>/^zh/i.test(x.lang))||null;}catch(e){}}
 try{pickVoice();speechSynthesis.onvoiceschanged=pickVoice;}catch(e){}
 let myVoice=null;
-function pickMy(){try{myVoice=speechSynthesis.getVoices().find(v=>/^my([-_]|$)/i.test(v.lang)||/burmese|myanmar/i.test(v.name))||null;}catch(e){}}
+function pickMy(){try{const v=allVoices();if(vpref.my==='__lang'){myVoice='__lang';return;}const pv=vpref.my&&v.find(x=>vid(x)===vpref.my);myVoice=pv||v.find(isMyVoice)||null;}catch(e){}}
 async function sayMy(text){
   pickMy();
+  if(myVoice==='__lang'){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='my-MM';u.rate=.9;speechSynthesis.speak(u);return;}catch(e){}}
   if(myVoice){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.voice=myVoice;u.lang=myVoice.lang;u.rate=.9;speechSynthesis.speak(u);return;}catch(e){}}
-  status('No Myanmar (Burmese) voice was found on this device. On Android you can try: Settings → Text-to-speech → Google speech engine → Install voice data → Myanmar, if it is offered.',true);
+  status('No Myanmar voice selected. Open ⚙️ Settings → 🔊 Voices and choose the Myanmar voice. · မြန်မာအသံ ရွေးရန် Settings ကိုဖွင့်ပါ',true);
 }
 let readingAll=false;
 const pauseMs=ms=>new Promise(r=>setTimeout(r,ms));
 function speakP(text,voice,lang,rate){return new Promise(res=>{try{const u=new SpeechSynthesisUtterance(text);if(voice)u.voice=voice;u.lang=lang;u.rate=rate;let done=false;const fin=()=>{if(!done){done=true;res();}};u.onend=fin;u.onerror=fin;speechSynthesis.speak(u);setTimeout(fin,Math.max(4000,text.length*450));}catch(e){res();}});}
 async function sayZhP(text){if(zhVoice)return speakP(text,zhVoice,zhVoice.lang,.8);if(ttsApi){try{await ttsApi.speak(text,{language:'zh-CN',rate:.85});return;}catch(e){}}return speakP(text,null,'zh-CN',.8);}
-async function sayMyP(text){pickMy();if(myVoice)return speakP(text,myVoice,myVoice.lang,.9);if(ttsApi){try{await ttsApi.speak(text,{language:'my'});return;}catch(e){}}return false;}
+async function sayMyP(text){pickMy();if(myVoice==='__lang')return speakP(text,null,'my-MM',.9);if(myVoice)return speakP(text,myVoice,myVoice.lang,.9);if(ttsApi){try{await ttsApi.speak(text,{language:'my'});return;}catch(e){}}return false;}
 async function readAll(l,btn){
   if(readingAll){readingAll=false;try{speechSynthesis.cancel();}catch(e){}try{ttsApi&&ttsApi.stop();}catch(e){}if(btn.isConnected)btn.textContent='🔊 Read all (中→မြန်မာ)';document.querySelectorAll('.w.reading').forEach(x=>x.classList.remove('reading'));return;}
   readingAll=true;btn.textContent='⏹ Stop';let myOk=true;
@@ -306,7 +319,7 @@ async function readAll(l,btn){
     await sayZhP(w.hanzi);
     if(!readingAll)break;
     await pauseMs(250);
-    if(myOk&&w.myanmar){const ok=await sayMyP(w.myanmar);if(ok===false){myOk=false;status('No Myanmar voice on this device — reading Chinese only.',true);}}
+    if(myOk&&w.myanmar){const ok=await sayMyP(w.myanmar);if(ok===false){myOk=false;status('No Myanmar voice selected — reading Chinese only. Choose one in ⚙️ Settings → 🔊 Voices.',true);}}
     await pauseMs(500);
   }
   readingAll=false;document.querySelectorAll('.w.reading').forEach(x=>x.classList.remove('reading'));
@@ -544,8 +557,24 @@ function showUndo(msg,undo){let el=$('toast');if(!el){el=document.createElement(
 function knownAdd(l,w){known.add(kkey(l,w));try{localStorage.setItem('cs-known',JSON.stringify([...known]));}catch(e){}}
 // ---------- settings dialog ----------
 function setStatus(m,err){const s=$('setStatus');s.style.display=m?'block':'none';s.className='status'+(err?' err':'');s.textContent=m||'';}
-function openSettings(){setStatus('');$('setModal').classList.add('open');}
+function fillVoices(){
+  const v=allVoices();const zs=$('zhSel'),ms=$('mySel');if(!zs)return;
+  const opt=(val,label,sel)=>`<option value="${esc(val)}"${sel?' selected':''}>${esc(label)}</option>`;
+  const sorted=v.slice().sort((a,b)=>(a.lang||'').localeCompare(b.lang||''));
+  zs.innerHTML=opt('','Auto (best Chinese voice)',!vpref.zh)+sorted.map(x=>opt(vid(x),x.name+' ('+x.lang+')',vpref.zh===vid(x))).join('');
+  const mys=sorted.filter(isMyVoice);
+  ms.innerHTML=opt('','Auto'+(mys.length?' → '+mys[0].name:' (none found)'),!vpref.my)+opt('__lang','System Myanmar voice (my-MM)',vpref.my==='__lang')
+    +(mys.length?'<optgroup label="Myanmar voices found">'+mys.map(x=>opt(vid(x),x.name+' ('+x.lang+')',vpref.my===vid(x))).join('')+'</optgroup>':'')
+    +'<optgroup label="All voices on this phone">'+sorted.filter(x=>!isMyVoice(x)).map(x=>opt(vid(x),x.name+' ('+x.lang+')',vpref.my===vid(x))).join('')+'</optgroup>';
+  $('voiceInfo').textContent=v.length+' voices on this phone · Myanmar voices found: '+(mys.length?mys.map(x=>x.name).join(', '):'none');
+}
+function saveVoices(){vpref.zh=$('zhSel').value;vpref.my=$('mySel').value;try{localStorage.setItem('cs-voices',JSON.stringify(vpref));}catch(e){}pickVoice();pickMy();}
+try{speechSynthesis.addEventListener('voiceschanged',()=>{if($('setModal').classList.contains('open'))fillVoices();});}catch(e){}
+function openSettings(){setStatus('');fillVoices();setTimeout(fillVoices,800);$('setModal').classList.add('open');}
 $('setBtn').onclick=openSettings;
+$('zhSel').onchange=saveVoices;$('mySel').onchange=saveVoices;
+$('zhTest').onclick=()=>{saveVoices();say('你好，我是学生。');};
+$('myTest').onclick=()=>{saveVoices();sayMy('မင်္ဂလာပါ။ ကျွန်တော် ကျောင်းသားပါ။');};
 $('closeSet').onclick=()=>$('setModal').classList.remove('open');
 $('setModal').onclick=e=>{if(e.target.id==='setModal')e.target.classList.remove('open');};
 $('unhideBtn').onclick=()=>{known=new Set();try{localStorage.removeItem('cs-known');}catch(e){}render();setStatus('All words are shown again ✓');};
