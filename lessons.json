@@ -2109,5 +2109,882 @@
         "corrections": []
       }
     ]
+  },
+  {
+    "id": "lmwexm8ci",
+    "title": "Daily Routine and Simple Phrases",
+    "title_my": "နေ့စဉ်လုပ်ငန်းများနှင့် ရိုးရှင်းသော စကားစုများ",
+    "date": "2026-11-13",
+    "words": [
+      {
+        "hanzi": "起床",
+        "pinyin": "qǐchuáng",
+        "english": "wake up / get up",
+        "myanmar": "အိပ်ယာထပါ",
+        "mm_sound": "ချီချွမ်",
+        "note": "",
+        "chars": [
+          {
+            "c": "起",
+            "pinyin": "qǐ",
+            "mm_sound": "ချီ",
+            "english": "rise",
+            "myanmar": "ထ"
+          },
+          {
+            "c": "床",
+            "pinyin": "chuáng",
+            "mm_sound": "ချွမ်",
+            "english": "bed",
+            "myanmar": "အိပ်ယာ"
+          }
+        ],
+        "example": {
+          "zh": "我每天七点起床。",
+          "pinyin": "Wǒ měitiān qī diǎn qǐchuáng.",
+          "mm_sound": "ဝေါ် မေ့ထျန် ချီ တျန် ချီချွမ်။",
+          "english": "I get up at seven every day.",
+          "myanmar": "ငါ နေ့တိုင်း ခုနစ်နာရီမှာ အိပ်ယာထတယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "吃早饭",
+        "pinyin": "chī zǎofàn",
+        "english": "have breakfast",
+        "myanmar": "မနက်စာစားပါ",
+        "mm_sound": "ချီ ဇောက်ဖန့်",
+        "note": "",
+        "chars": [
+          {
+            "c": "吃",
+            "pinyin": "chī",
+            "mm_sound": "ချီ",
+            "english": "eat",
+            "myanmar": "စား"
+          },
+          {
+            "c": "早",
+            "pinyin": "zǎo",
+            "mm_sound": "ဇောက်",
+            "english": "morning / early",
+            "myanmar": "မနက်"
+          },
+          {
+            "c": "饭",
+            "pinyin": "fàn",
+            "mm_sound": "ဖန့်",
+            "english": "meal / rice",
+            "myanmar": "ထမင်း"
+          }
+        ],
+        "example": {
+          "zh": "你吃早饭了吗？",
+          "pinyin": "Nǐ chī zǎofàn le ma?",
+          "mm_sound": "နီ ချီ ဇောက်ဖန့် လဲ မ?",
+          "english": "Have you had breakfast?",
+          "myanmar": "မင်း မနက်စာ စားပြီးပြီလား။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "chi zaofan",
+            "to": "chī zǎofàn",
+            "why": "missing tone marks"
+          },
+          {
+            "field": "english",
+            "from": "Have break fast",
+            "to": "have breakfast",
+            "why": "breakfast is one word"
+          }
+        ]
+      },
+      {
+        "hanzi": "上班",
+        "pinyin": "shàngbān",
+        "english": "go to work / go to the office",
+        "myanmar": "ရုံးတက်ပါ / အလုပ်သွားပါ",
+        "mm_sound": "ရှန့်ပန်",
+        "note": "Opposite: 下班 xiàbān (finish work)",
+        "chars": [
+          {
+            "c": "上",
+            "pinyin": "shàng",
+            "mm_sound": "ရှန့်",
+            "english": "go up / attend",
+            "myanmar": "တက်"
+          },
+          {
+            "c": "班",
+            "pinyin": "bān",
+            "mm_sound": "ပန်",
+            "english": "shift / work",
+            "myanmar": "အလုပ်ဆိုင်း"
+          }
+        ],
+        "example": {
+          "zh": "我八点上班。",
+          "pinyin": "Wǒ bā diǎn shàngbān.",
+          "mm_sound": "ဝေါ် ပါ တျန် ရှန့်ပန်။",
+          "english": "I start work at eight.",
+          "myanmar": "ငါ ရှစ်နာရီမှာ ရုံးတက်တယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "去学校",
+        "pinyin": "qù xuéxiào",
+        "english": "go to school",
+        "myanmar": "ကျောင်းသွားပါ",
+        "mm_sound": "ချွီ ရွယ်ရှောင့်",
+        "note": "",
+        "chars": [
+          {
+            "c": "去",
+            "pinyin": "qù",
+            "mm_sound": "ချွီ",
+            "english": "go",
+            "myanmar": "သွား"
+          },
+          {
+            "c": "学",
+            "pinyin": "xué",
+            "mm_sound": "ရွယ်",
+            "english": "study",
+            "myanmar": "သင်ယူ"
+          },
+          {
+            "c": "校",
+            "pinyin": "xiào",
+            "mm_sound": "ရှောင့်",
+            "english": "school",
+            "myanmar": "ကျောင်း"
+          }
+        ],
+        "example": {
+          "zh": "他每天去学校。",
+          "pinyin": "Tā měitiān qù xuéxiào.",
+          "mm_sound": "ထာ မေ့ထျန် ချွီ ရွယ်ရှောင့်။",
+          "english": "He goes to school every day.",
+          "myanmar": "သူ နေ့တိုင်း ကျောင်းသွားတယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "gù xuexiao",
+            "to": "qù xuéxiào",
+            "why": "去 starts with q; missing tone marks"
+          },
+          {
+            "field": "english",
+            "from": "Goto school",
+            "to": "go to school",
+            "why": "go to is two words"
+          }
+        ]
+      },
+      {
+        "hanzi": "做饭",
+        "pinyin": "zuò fàn",
+        "english": "cook (a meal)",
+        "myanmar": "ထမင်းချက်ပါ",
+        "mm_sound": "ဇော့ဖန့်",
+        "note": "",
+        "chars": [
+          {
+            "c": "做",
+            "pinyin": "zuò",
+            "mm_sound": "ဇော့",
+            "english": "make / do",
+            "myanmar": "လုပ်"
+          },
+          {
+            "c": "饭",
+            "pinyin": "fàn",
+            "mm_sound": "ဖန့်",
+            "english": "meal / rice",
+            "myanmar": "ထမင်း"
+          }
+        ],
+        "example": {
+          "zh": "妈妈在做饭。",
+          "pinyin": "Māma zài zuò fàn.",
+          "mm_sound": "မားမ ဇိုက် ဇော့ဖန့်။",
+          "english": "Mom is cooking.",
+          "myanmar": "အမေ ထမင်းချက်နေတယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "买菜",
+        "pinyin": "mǎi cài",
+        "english": "go grocery shopping",
+        "myanmar": "ဈေးဝယ်ပါ",
+        "mm_sound": "မိုင်ဆိုက်",
+        "note": "Literally buy vegetables or food; for general shopping use 买东西 mǎi dōngxi",
+        "chars": [
+          {
+            "c": "买",
+            "pinyin": "mǎi",
+            "mm_sound": "မိုင်",
+            "english": "buy",
+            "myanmar": "ဝယ်"
+          },
+          {
+            "c": "菜",
+            "pinyin": "cài",
+            "mm_sound": "ဆိုက်",
+            "english": "vegetables / dish",
+            "myanmar": "ဟင်းသီးဟင်းရွက်"
+          }
+        ],
+        "example": {
+          "zh": "我去买菜。",
+          "pinyin": "Wǒ qù mǎi cài.",
+          "mm_sound": "ဝေါ် ချွီ မိုင်ဆိုက်။",
+          "english": "I'm going grocery shopping.",
+          "myanmar": "ငါ ဈေးဝယ်သွားမယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "洗碗",
+        "pinyin": "xǐ wǎn",
+        "english": "wash the dishes",
+        "myanmar": "ပန်းကန်ဆေးပါ",
+        "mm_sound": "ရှီဝမ်",
+        "note": "",
+        "chars": [
+          {
+            "c": "洗",
+            "pinyin": "xǐ",
+            "mm_sound": "ရှီ",
+            "english": "wash",
+            "myanmar": "ဆေး"
+          },
+          {
+            "c": "碗",
+            "pinyin": "wǎn",
+            "mm_sound": "ဝမ်",
+            "english": "bowl",
+            "myanmar": "ပန်းကန်လုံး"
+          }
+        ],
+        "example": {
+          "zh": "我来洗碗。",
+          "pinyin": "Wǒ lái xǐ wǎn.",
+          "mm_sound": "ဝေါ် လိုင် ရှီဝမ်။",
+          "english": "I'll wash the dishes.",
+          "myanmar": "ငါ ပန်းကန်ဆေးမယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "xi wǎn",
+            "to": "xǐ wǎn",
+            "why": "missing tone mark on xǐ"
+          }
+        ]
+      },
+      {
+        "hanzi": "不要洗碗",
+        "pinyin": "bú yào xǐ wǎn",
+        "english": "don't wash the dishes",
+        "myanmar": "ပန်းကန်မဆေးရ",
+        "mm_sound": "ပူယောင့် ရှီဝမ်",
+        "note": "不要 + verb = don't do it",
+        "chars": [
+          {
+            "c": "不",
+            "pinyin": "bù",
+            "mm_sound": "ပူ",
+            "english": "not",
+            "myanmar": "မ"
+          },
+          {
+            "c": "要",
+            "pinyin": "yào",
+            "mm_sound": "ယောင့်",
+            "english": "want / should",
+            "myanmar": "လို"
+          },
+          {
+            "c": "洗",
+            "pinyin": "xǐ",
+            "mm_sound": "ရှီ",
+            "english": "wash",
+            "myanmar": "ဆေး"
+          },
+          {
+            "c": "碗",
+            "pinyin": "wǎn",
+            "mm_sound": "ဝမ်",
+            "english": "bowl",
+            "myanmar": "ပန်းကန်လုံး"
+          }
+        ],
+        "example": {
+          "zh": "你不要洗碗，我来。",
+          "pinyin": "Nǐ bú yào xǐ wǎn, wǒ lái.",
+          "mm_sound": "နီ ပူယောင့် ရှီဝမ်၊ ဝေါ် လိုင်။",
+          "english": "Don't wash the dishes, I'll do it.",
+          "myanmar": "မင်း ပန်းကန်မဆေးနဲ့၊ ငါ ဆေးမယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "bù yào xi wǎn",
+            "to": "bú yào xǐ wǎn",
+            "why": "不 becomes bú before a 4th tone; xǐ was missing its tone mark"
+          }
+        ]
+      },
+      {
+        "hanzi": "衣服",
+        "pinyin": "yīfu",
+        "english": "clothes",
+        "myanmar": "အဝတ်အထည်",
+        "mm_sound": "ယီဖူ",
+        "note": "Measure word: 件 jiàn",
+        "chars": [
+          {
+            "c": "衣",
+            "pinyin": "yī",
+            "mm_sound": "ယီ",
+            "english": "clothing",
+            "myanmar": "အဝတ်"
+          },
+          {
+            "c": "服",
+            "pinyin": "fú",
+            "mm_sound": "ဖူ",
+            "english": "clothes",
+            "myanmar": "အထည်"
+          }
+        ],
+        "example": {
+          "zh": "这件衣服很好看。",
+          "pinyin": "Zhè jiàn yīfu hěn hǎokàn.",
+          "mm_sound": "ကျဲ့ ကျန့် ယီဖူ ဟဲန် ဟောင်ခန့်။",
+          "english": "This piece of clothing looks nice.",
+          "myanmar": "ဒီအဝတ်က အရမ်းလှတယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "yifu",
+            "to": "yīfu",
+            "why": "missing tone mark; fu is neutral tone"
+          }
+        ]
+      },
+      {
+        "hanzi": "洗衣服",
+        "pinyin": "xǐ yīfu",
+        "english": "wash clothes / do the laundry",
+        "myanmar": "အဝတ်လျှော်ပါ",
+        "mm_sound": "ရှီ ယီဖူ",
+        "note": "",
+        "chars": [
+          {
+            "c": "洗",
+            "pinyin": "xǐ",
+            "mm_sound": "ရှီ",
+            "english": "wash",
+            "myanmar": "လျှော် / ဆေး"
+          },
+          {
+            "c": "衣",
+            "pinyin": "yī",
+            "mm_sound": "ယီ",
+            "english": "clothing",
+            "myanmar": "အဝတ်"
+          },
+          {
+            "c": "服",
+            "pinyin": "fú",
+            "mm_sound": "ဖူ",
+            "english": "clothes",
+            "myanmar": "အထည်"
+          }
+        ],
+        "example": {
+          "zh": "我今天洗衣服。",
+          "pinyin": "Wǒ jīntiān xǐ yīfu.",
+          "mm_sound": "ဝေါ် ကျင်ထျန် ရှီ ယီဖူ။",
+          "english": "I'm doing the laundry today.",
+          "myanmar": "ငါ ဒီနေ့ အဝတ်လျှော်မယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "xi yifu",
+            "to": "xǐ yīfu",
+            "why": "missing tone marks"
+          },
+          {
+            "field": "english",
+            "from": "Do the clothes",
+            "to": "wash clothes / do the laundry",
+            "why": "more natural English"
+          }
+        ]
+      },
+      {
+        "hanzi": "水",
+        "pinyin": "shuǐ",
+        "english": "water",
+        "myanmar": "ရေ",
+        "mm_sound": "ရွှေ",
+        "note": "",
+        "chars": [],
+        "example": {
+          "zh": "我要一杯水。",
+          "pinyin": "Wǒ yào yì bēi shuǐ.",
+          "mm_sound": "ဝေါ် ယောင့် ယီ ပေ ရွှေ။",
+          "english": "I want a glass of water.",
+          "myanmar": "ငါ ရေတစ်ခွက် လိုချင်တယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "sui",
+            "to": "shuǐ",
+            "why": "水 is shuǐ (sh, not s); missing tone mark"
+          }
+        ]
+      },
+      {
+        "hanzi": "喝水",
+        "pinyin": "hē shuǐ",
+        "english": "drink water",
+        "myanmar": "ရေသောက်ပါ",
+        "mm_sound": "ဟဲ ရွှေ",
+        "note": "",
+        "chars": [
+          {
+            "c": "喝",
+            "pinyin": "hē",
+            "mm_sound": "ဟဲ",
+            "english": "drink",
+            "myanmar": "သောက်"
+          },
+          {
+            "c": "水",
+            "pinyin": "shuǐ",
+            "mm_sound": "ရွှေ",
+            "english": "water",
+            "myanmar": "ရေ"
+          }
+        ],
+        "example": {
+          "zh": "请多喝水。",
+          "pinyin": "Qǐng duō hē shuǐ.",
+          "mm_sound": "ချင် တို ဟဲ ရွှေ။",
+          "english": "Please drink more water.",
+          "myanmar": "ရေ များများ သောက်ပါ။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "hè sui",
+            "to": "hē shuǐ",
+            "why": "喝 is 1st tone; 水 is shuǐ"
+          }
+        ]
+      },
+      {
+        "hanzi": "洗澡",
+        "pinyin": "xǐ zǎo",
+        "english": "take a shower / bathe",
+        "myanmar": "ရေချိုးပါ",
+        "mm_sound": "ရှီ ဇောက်",
+        "note": "",
+        "chars": [
+          {
+            "c": "洗",
+            "pinyin": "xǐ",
+            "mm_sound": "ရှီ",
+            "english": "wash",
+            "myanmar": "ဆေး"
+          },
+          {
+            "c": "澡",
+            "pinyin": "zǎo",
+            "mm_sound": "ဇောက်",
+            "english": "bath",
+            "myanmar": "ရေချိုး"
+          }
+        ],
+        "example": {
+          "zh": "我晚上洗澡。",
+          "pinyin": "Wǒ wǎnshang xǐ zǎo.",
+          "mm_sound": "ဝေါ် ဝမ်ရှန် ရှီ ဇောက်။",
+          "english": "I take a shower in the evening.",
+          "myanmar": "ငါ ညနေ ရေချိုးတယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "xi zǎo",
+            "to": "xǐ zǎo",
+            "why": "missing tone mark on xǐ"
+          }
+        ]
+      },
+      {
+        "hanzi": "洗脸",
+        "pinyin": "xǐ liǎn",
+        "english": "wash your face",
+        "myanmar": "မျက်နှာသစ်ပါ",
+        "mm_sound": "ရှီ လျန်",
+        "note": "",
+        "chars": [
+          {
+            "c": "洗",
+            "pinyin": "xǐ",
+            "mm_sound": "ရှီ",
+            "english": "wash",
+            "myanmar": "ဆေး"
+          },
+          {
+            "c": "脸",
+            "pinyin": "liǎn",
+            "mm_sound": "လျန်",
+            "english": "face",
+            "myanmar": "မျက်နှာ"
+          }
+        ],
+        "example": {
+          "zh": "我早上洗脸。",
+          "pinyin": "Wǒ zǎoshang xǐ liǎn.",
+          "mm_sound": "ဝေါ် ဇောက်ရှန် ရှီ လျန်။",
+          "english": "I wash my face in the morning.",
+          "myanmar": "ငါ မနက် မျက်နှာသစ်တယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "xi liǎn",
+            "to": "xǐ liǎn",
+            "why": "missing tone mark on xǐ"
+          }
+        ]
+      },
+      {
+        "hanzi": "好可爱",
+        "pinyin": "hǎo kě'ài",
+        "english": "so cute",
+        "myanmar": "အရမ်းချစ်စရာကောင်းတယ်",
+        "mm_sound": "ဟောင် ခဲ့အိုင့်",
+        "note": "好 here means very or so",
+        "chars": [
+          {
+            "c": "好",
+            "pinyin": "hǎo",
+            "mm_sound": "ဟောင်",
+            "english": "very / so",
+            "myanmar": "အရမ်း"
+          },
+          {
+            "c": "可",
+            "pinyin": "kě",
+            "mm_sound": "ခဲ့",
+            "english": "can / worthy of",
+            "myanmar": "ထိုက်တန်"
+          },
+          {
+            "c": "爱",
+            "pinyin": "ài",
+            "mm_sound": "အိုင့်",
+            "english": "love",
+            "myanmar": "ချစ်"
+          }
+        ],
+        "example": {
+          "zh": "这只猫好可爱！",
+          "pinyin": "Zhè zhī māo hǎo kě'ài!",
+          "mm_sound": "ကျဲ့ ကျီ မောင် ဟောင် ခဲ့အိုင့်!",
+          "english": "This cat is so cute!",
+          "myanmar": "ဒီကြောင်လေး အရမ်းချစ်စရာကောင်းတယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "hǎo kèai",
+            "to": "hǎo kě'ài",
+            "why": "可 is 3rd tone, 爱 is 4th tone; use an apostrophe before a"
+          }
+        ]
+      },
+      {
+        "hanzi": "我很喜欢",
+        "pinyin": "wǒ hěn xǐhuan",
+        "english": "I like it very much",
+        "myanmar": "ငါ အရမ်းသဘောကျတယ်",
+        "mm_sound": "ဝေါ် ဟဲန် ရှီဟွမ်",
+        "note": "",
+        "chars": [
+          {
+            "c": "我",
+            "pinyin": "wǒ",
+            "mm_sound": "ဝေါ်",
+            "english": "I / me",
+            "myanmar": "ငါ / ကျွန်တော်"
+          },
+          {
+            "c": "很",
+            "pinyin": "hěn",
+            "mm_sound": "ဟဲန်",
+            "english": "very",
+            "myanmar": "အရမ်း"
+          },
+          {
+            "c": "喜",
+            "pinyin": "xǐ",
+            "mm_sound": "ရှီ",
+            "english": "happy / like",
+            "myanmar": "ပျော်"
+          },
+          {
+            "c": "欢",
+            "pinyin": "huān",
+            "mm_sound": "ဟွမ်",
+            "english": "joyful",
+            "myanmar": "ဝမ်းသာ"
+          }
+        ],
+        "example": {
+          "zh": "我很喜欢中国菜。",
+          "pinyin": "Wǒ hěn xǐhuan Zhōngguó cài.",
+          "mm_sound": "ဝေါ် ဟဲန် ရှီဟွမ် ကျုံကော့ ဆိုက်။",
+          "english": "I really like Chinese food.",
+          "myanmar": "ငါ တရုတ်အစားအစာကို အရမ်းသဘောကျတယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "wǒ hěn xǐ huān",
+            "to": "wǒ hěn xǐhuan",
+            "why": "欢 is neutral tone in 喜欢; written as one word"
+          }
+        ]
+      },
+      {
+        "hanzi": "我生病了",
+        "pinyin": "wǒ shēngbìng le",
+        "english": "I'm sick",
+        "myanmar": "ငါ နေမကောင်းဖြစ်နေတယ်",
+        "mm_sound": "ဝေါ် ရှန်ပင့် လဲ",
+        "note": "",
+        "chars": [
+          {
+            "c": "我",
+            "pinyin": "wǒ",
+            "mm_sound": "ဝေါ်",
+            "english": "I / me",
+            "myanmar": "ငါ"
+          },
+          {
+            "c": "生",
+            "pinyin": "shēng",
+            "mm_sound": "ရှန်",
+            "english": "get / be born",
+            "myanmar": "ဖြစ်"
+          },
+          {
+            "c": "病",
+            "pinyin": "bìng",
+            "mm_sound": "ပင့်",
+            "english": "illness",
+            "myanmar": "ရောဂါ"
+          },
+          {
+            "c": "了",
+            "pinyin": "le",
+            "mm_sound": "လဲ",
+            "english": "particle (change or completion)",
+            "myanmar": "ပြီ (ပစ္စည်း)"
+          }
+        ],
+        "example": {
+          "zh": "我生病了，不去上班。",
+          "pinyin": "Wǒ shēngbìng le, bú qù shàngbān.",
+          "mm_sound": "ဝေါ် ရှန်ပင့် လဲ၊ ပူ ချွီ ရှန့်ပန်။",
+          "english": "I'm sick, so I'm not going to work.",
+          "myanmar": "ငါ နေမကောင်းလို့ ရုံးမတက်ဘူး။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "你去看医生了吗？",
+        "pinyin": "nǐ qù kàn yīshēng le ma?",
+        "english": "Did you go to see a doctor?",
+        "myanmar": "ဆရာဝန်ဆီ ပြပြီးပြီလား",
+        "mm_sound": "နီ ချွီ ခန့် ယီရှန် လဲ မ?",
+        "note": "看医生 = see a doctor",
+        "chars": [
+          {
+            "c": "你",
+            "pinyin": "nǐ",
+            "mm_sound": "နီ",
+            "english": "you",
+            "myanmar": "မင်း / သင်"
+          },
+          {
+            "c": "去",
+            "pinyin": "qù",
+            "mm_sound": "ချွီ",
+            "english": "go",
+            "myanmar": "သွား"
+          },
+          {
+            "c": "看",
+            "pinyin": "kàn",
+            "mm_sound": "ခန့်",
+            "english": "see / visit",
+            "myanmar": "ကြည့် / ပြ"
+          },
+          {
+            "c": "医",
+            "pinyin": "yī",
+            "mm_sound": "ယီ",
+            "english": "medicine",
+            "myanmar": "ဆေး"
+          },
+          {
+            "c": "生",
+            "pinyin": "shēng",
+            "mm_sound": "ရှန်",
+            "english": "person (in 医生)",
+            "myanmar": "သူ"
+          },
+          {
+            "c": "了",
+            "pinyin": "le",
+            "mm_sound": "လဲ",
+            "english": "particle (completion)",
+            "myanmar": "ပြီ (ပစ္စည်း)"
+          },
+          {
+            "c": "吗",
+            "pinyin": "ma",
+            "mm_sound": "မ",
+            "english": "question particle",
+            "myanmar": "လား (မေးခွန်းပစ္စည်း)"
+          }
+        ],
+        "example": {
+          "zh": "你生病了，去看医生吧。",
+          "pinyin": "Nǐ shēngbìng le, qù kàn yīshēng ba.",
+          "mm_sound": "နီ ရှန်ပင့် လဲ၊ ချွီ ခန့် ယီရှန် ပါ။",
+          "english": "You're sick, go see a doctor.",
+          "myanmar": "မင်း နေမကောင်းဘူး၊ ဆရာဝန်ဆီ သွားပြလိုက်ပါ။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "ni gù kàn yisheng le ma",
+            "to": "nǐ qù kàn yīshēng le ma",
+            "why": "去 starts with q; missing tone marks"
+          }
+        ]
+      },
+      {
+        "hanzi": "还没，我想先休息一下。",
+        "pinyin": "hái méi, wǒ xiǎng xiān xiūxi yíxià.",
+        "english": "Not yet, I want to rest first.",
+        "myanmar": "မပြရသေးဘူး၊ ငါ အရင် အနားယူချင်တယ်",
+        "mm_sound": "ဟိုင် မေ၊ ဝေါ် ရှန် ရှျန် ရှိုရှီ ယီရှာ့။",
+        "note": "还没 = not yet; 一下 makes a verb softer (do it briefly)",
+        "chars": [
+          {
+            "c": "还",
+            "pinyin": "hái",
+            "mm_sound": "ဟိုင်",
+            "english": "still",
+            "myanmar": "သေး"
+          },
+          {
+            "c": "没",
+            "pinyin": "méi",
+            "mm_sound": "မေ",
+            "english": "not (have)",
+            "myanmar": "မ"
+          },
+          {
+            "c": "我",
+            "pinyin": "wǒ",
+            "mm_sound": "ဝေါ်",
+            "english": "I",
+            "myanmar": "ငါ"
+          },
+          {
+            "c": "想",
+            "pinyin": "xiǎng",
+            "mm_sound": "ရှန်",
+            "english": "want / would like",
+            "myanmar": "ချင်"
+          },
+          {
+            "c": "先",
+            "pinyin": "xiān",
+            "mm_sound": "ရှျန်",
+            "english": "first",
+            "myanmar": "အရင်"
+          },
+          {
+            "c": "休",
+            "pinyin": "xiū",
+            "mm_sound": "ရှို",
+            "english": "rest",
+            "myanmar": "နား"
+          },
+          {
+            "c": "息",
+            "pinyin": "xī",
+            "mm_sound": "ရှီ",
+            "english": "breath / rest",
+            "myanmar": "အသက်ရှူ"
+          },
+          {
+            "c": "一",
+            "pinyin": "yī",
+            "mm_sound": "ယီ",
+            "english": "one",
+            "myanmar": "တစ်"
+          },
+          {
+            "c": "下",
+            "pinyin": "xià",
+            "mm_sound": "ရှာ့",
+            "english": "time (a bit)",
+            "myanmar": "ခဏ"
+          }
+        ],
+        "example": {
+          "zh": "我累了，想休息一下。",
+          "pinyin": "Wǒ lèi le, xiǎng xiūxi yíxià.",
+          "mm_sound": "ဝေါ် လေ့ လဲ၊ ရှန် ရှိုရှီ ယီရှာ့။",
+          "english": "I'm tired and want to rest for a bit.",
+          "myanmar": "ငါ ပင်ပန်းနေပြီ၊ ခဏ အနားယူချင်တယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "xiàn",
+            "to": "xiān",
+            "why": "先 is 1st tone"
+          },
+          {
+            "field": "pinyin",
+            "from": "yi xià",
+            "to": "yíxià",
+            "why": "一 becomes yí before a 4th tone"
+          }
+        ]
+      }
+    ]
   }
 ]
