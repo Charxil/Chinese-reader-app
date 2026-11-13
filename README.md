@@ -83,14 +83,14 @@ Open the phone **Settings**, search **text-to-speech**, and open **Text-to-speec
 ## 5. For the teacher (Aye Chan): updating
 
 ### Add or change lessons
-1. In the Claude notebook, tap **📋 Copy all data (JSON)**.
+1. In the Claude notebook, tap **📲 Copy for app (with photos)** (or **📋 Copy all data (JSON)** for text only, no photos).
 2. On GitHub open **lessons.json** → ✏️ Edit → select all → delete → paste.
 3. **Commit changes** (e.g. `Add lesson: Body Parts`).
 4. Users get the lessons when they reopen the app or tap 🔄 Refresh.
 
 ### Update the app itself
 1. Upload the new **index.html** and **sw.js** (Add file → Upload files → Commit).
-2. `sw.js` line 2 must have a new version, e.g. `cs-viewer-v6` → `cs-viewer-v7`.
+2. `sw.js` line 2 must have a new version, e.g. `cs-viewer-v7` → `cs-viewer-v8`.
 3. Wait 1–10 minutes, then close and reopen the app (twice if needed).
 
 ### Files in this repo

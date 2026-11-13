@@ -103,6 +103,7 @@ footer.credit b{color:var(--red)}
 .toast button{border:none;background:#fff;color:var(--ink);border-radius:999px;padding:6px 12px;font:inherit;font-weight:600;cursor:pointer}
 .spkmm{border:none;background:#fff6e5;color:#7a5414;border-radius:999px;padding:2px 9px;font-size:12px;cursor:pointer;margin-top:3px;font-family:Inter,'Noto Sans Myanmar',sans-serif}
 .spkmm:hover{background:#ffeccc}
+.rmode{font:inherit;font-size:13px;border:1px solid var(--line);border-radius:999px;padding:5px 10px;background:#fff;color:var(--ink);cursor:pointer}
 .w.reading{outline:3px solid var(--jade);outline-offset:2px}
 .hbtns{align-items:center;flex-wrap:wrap}
 button.chip.refresh{display:flex;flex-direction:column;align-items:center;line-height:1.25;padding:5px 14px;border-color:var(--jade);color:var(--jade);background:var(--jade-soft)}
@@ -206,7 +207,7 @@ function renderPanel(){
          <button class="chip ${hidden.hz?'on':''}" data-h="hz">Hide 汉字</button>
          <button class="chip ${hidden.py?'on':''}" data-h="py">Hide pinyin</button>
          <button class="chip ${hidden.mean?'on':''}" data-h="mean">Hide meaning</button>
-         <button class="chip" id="readAll">${readingAll?'⏹ Stop':'🔊 Read all (中→မြန်မာ)'}</button>
+         <button class="chip" id="readAll">${readingAll?'⏹ Stop':'🔊 Read all'}</button><select id="readMode" class="rmode" title="What Read all reads · ဖတ်ပုံ ရွေးရန်"><option value="my" ${readMode==='my'?'selected':''}>中 → မြန်မာ</option><option value="en" ${readMode==='en'?'selected':''}>中 → English</option><option value="zh" ${readMode==='zh'?'selected':''}>中 only</option></select>
          ${l.words.some(w=>isKnown(l,w))?`<button class="chip" id="unhideLesson">↩ Show ${l.words.filter(w=>isKnown(l,w)).length} hidden word${l.words.filter(w=>isKnown(l,w)).length>1?'s':''}</button>`:''}
          ${artifactApi?`<button class="chip" id="editBtn">${editing?'💾 Save edits':'✏️ Edit'}</button>
          ${editing?'<button class="chip" id="cancelEdit">Cancel</button>':''}
@@ -256,6 +257,7 @@ function renderPanel(){
   const ul=$('unhideLesson'); if(ul) ul.onclick=()=>{l.words.forEach(w=>knownRemove(l,w));renderPanel();showUndo('All words in this lesson are back ✓');};
   $('fcBtn').onclick=()=>openFC(Object.assign({},l,{words:l.words.filter(w=>!isKnown(l,w))}));
   $('readAll').onclick=()=>readAll(l,$('readAll'));
+  const rm=$('readMode'); if(rm) rm.onchange=()=>{readMode=rm.value;try{localStorage.setItem('cs-readmode',readMode);}catch(e){}};
   const th=$('thumb'); if(th) th.onclick=()=>{$('zoomImg').src=l.img||l.thumb;$('zoom').classList.add('open');};
   if(editing){p.querySelectorAll('[data-f]').forEach(e=>e.contentEditable='true');}
   const eb=$('editBtn'); if(eb) eb.onclick=()=>{ if(editing){saveEdits(l);} else {editing=true;renderPanel();} };
@@ -303,33 +305,40 @@ async function sayMy(text){
   if(myVoice){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.voice=myVoice;u.lang=myVoice.lang;u.rate=.9;speechSynthesis.speak(u);return;}catch(e){}}
   status('No Myanmar voice selected. Open ⚙️ Settings → 🔊 Voices and choose the Myanmar voice. · မြန်မာအသံ ရွေးရန် Settings ကိုဖွင့်ပါ',true);
 }
-let readingAll=false;
+let readMode='my';try{readMode=localStorage.getItem('cs-readmode')||'my';}catch(e){}
+let enVoice=null;function pickEn(){try{const v=speechSynthesis.getVoices();enVoice=v.find(x=>/^en[-_]US/i.test(x.lang))||v.find(x=>/^en/i.test(x.lang))||null;}catch(e){}}
+async function sayEnP(text){pickEn();if(enVoice)return speakP(text,enVoice,enVoice.lang,.95);if(ttsApi){try{await ttsApi.speak(text,{language:'en'});return;}catch(e){}}return speakP(text,null,'en-US',.95);}
+let readingAll=false,readRun=0;
 const pauseMs=ms=>new Promise(r=>setTimeout(r,ms));
 function speakP(text,voice,lang,rate){return new Promise(res=>{try{const u=new SpeechSynthesisUtterance(text);if(voice)u.voice=voice;u.lang=lang;u.rate=rate;let done=false;const fin=()=>{if(!done){done=true;res();}};u.onend=fin;u.onerror=fin;speechSynthesis.speak(u);setTimeout(fin,Math.max(4000,text.length*450));}catch(e){res();}});}
 async function sayZhP(text){if(zhVoice)return speakP(text,zhVoice,zhVoice.lang,.8);if(ttsApi){try{await ttsApi.speak(text,{language:'zh-CN',rate:.85});return;}catch(e){}}return speakP(text,null,'zh-CN',.8);}
 async function sayMyP(text){pickMy();if(myVoice==='__lang')return speakP(text,null,'my-MM',.9);if(myVoice)return speakP(text,myVoice,myVoice.lang,.9);if(ttsApi){try{await ttsApi.speak(text,{language:'my'});return;}catch(e){}}return false;}
 async function readAll(l,btn){
-  if(readingAll){readingAll=false;try{speechSynthesis.cancel();}catch(e){}try{ttsApi&&ttsApi.stop();}catch(e){}if(btn.isConnected)btn.textContent='🔊 Read all (中→မြန်မာ)';document.querySelectorAll('.w.reading').forEach(x=>x.classList.remove('reading'));return;}
-  readingAll=true;btn.textContent='⏹ Stop';let myOk=true;
+  const run=++readRun;
+  if(readingAll){readingAll=false;readRun++;try{speechSynthesis.cancel();}catch(e){}try{ttsApi&&ttsApi.stop();}catch(e){}if(btn.isConnected)btn.textContent='🔊 Read all';document.querySelectorAll('.w.reading').forEach(x=>x.classList.remove('reading'));return;}
+  readingAll=true;btn.textContent='⏹ Stop';const live=()=>readingAll&&run===readRun;let myOk=true;
   const ws=l.words.map((w,i)=>[w,i]).filter(([w])=>!(typeof isKnown==='function'&&isKnown(l,w)));
   for(const [w,i] of ws){
-    if(!readingAll)break;
+    if(!live())break;
     document.querySelectorAll('.w.reading').forEach(x=>x.classList.remove('reading'));
     const card=document.querySelector('.w[data-i="'+i+'"]');if(card){card.classList.add('reading');card.scrollIntoView({block:'nearest',behavior:'smooth'});}
     await sayZhP(w.hanzi);
-    if(!readingAll)break;
+    if(!live())break;
     await pauseMs(250);
-    if(myOk&&w.myanmar){const ok=await sayMyP(w.myanmar);if(ok===false){myOk=false;status('No Myanmar voice selected — reading Chinese only. Choose one in ⚙️ Settings → 🔊 Voices.',true);}}
-    if(w.example&&w.example.zh&&readingAll){
-      await pauseMs(450);if(!readingAll)break;
-      await sayZhP(w.example.zh);if(!readingAll)break;
+    if(readMode==='en'){if(w.english)await sayEnP(w.english);}
+    else if(readMode==='my'&&myOk&&w.myanmar){const ok=await sayMyP(w.myanmar);if(ok===false){myOk=false;status('No Myanmar voice selected — reading Chinese only. Choose one in ⚙️ Settings → 🔊 Voices.',true);}}
+    if(w.example&&w.example.zh&&live()){
+      await pauseMs(450);if(!live())break;
+      await sayZhP(w.example.zh);if(!live())break;
       await pauseMs(250);
-      if(myOk&&w.example.myanmar){const ok2=await sayMyP(w.example.myanmar);if(ok2===false)myOk=false;}
+      if(readMode==='en'){if(w.example.english)await sayEnP(w.example.english);}
+      else if(readMode==='my'&&myOk&&w.example.myanmar){const ok2=await sayMyP(w.example.myanmar);if(ok2===false)myOk=false;}
     }
     await pauseMs(500);
   }
+  if(run!==readRun)return;
   readingAll=false;document.querySelectorAll('.w.reading').forEach(x=>x.classList.remove('reading'));
-  const b2=$('readAll');if(b2)b2.textContent='🔊 Read all (中→မြန်မာ)';
+  const b2=$('readAll');if(b2)b2.textContent='🔊 Read all';
 }
 async function say(text){
   if(zhVoice){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.voice=zhVoice;u.lang=zhVoice.lang;u.rate=.8;speechSynthesis.speak(u);return;}catch(e){}}
