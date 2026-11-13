@@ -1,0 +1,1722 @@
+[
+  {
+    "id": "face",
+    "title": "Parts of the Face & Head",
+    "title_my": "မျက်နှာနှင့် ခေါင်း အစိတ်အပိုင်းများ",
+    "date": "2026-11-13",
+    "words": [
+      {
+        "hanzi": "头",
+        "pinyin": "tóu",
+        "english": "head",
+        "myanmar": "ခေါင်း",
+        "mm_sound": "ထို",
+        "note": "",
+        "corrections": [],
+        "example": {
+          "zh": "我头疼。",
+          "pinyin": "Wǒ tóu téng.",
+          "mm_sound": "ဝေါ် ထို ထန်",
+          "english": "I have a headache.",
+          "myanmar": "ကျွန်တော် ခေါင်းကိုက်တယ်။"
+        },
+        "chars": []
+      },
+      {
+        "hanzi": "头发",
+        "pinyin": "tóu fa",
+        "english": "hair",
+        "myanmar": "ဆံပင်",
+        "mm_sound": "ထိုဖာ",
+        "note": "",
+        "corrections": [],
+        "example": {
+          "zh": "她的头发很长。",
+          "pinyin": "Tā de tóufa hěn cháng.",
+          "mm_sound": "တာ့ တဲ့ ထိုဖာ ဟန် ချန်",
+          "english": "Her hair is very long.",
+          "myanmar": "သူမရဲ့ ဆံပင်က အရမ်းရှည်တယ်။"
+        },
+        "chars": [
+          {
+            "c": "头",
+            "pinyin": "tóu",
+            "english": "head",
+            "myanmar": "ခေါင်း",
+            "mm_sound": "ထို"
+          },
+          {
+            "c": "发",
+            "pinyin": "fà",
+            "english": "hair",
+            "myanmar": "ဆံပင်",
+            "mm_sound": "ဖာ"
+          }
+        ]
+      },
+      {
+        "hanzi": "额头",
+        "pinyin": "é tóu",
+        "english": "forehead",
+        "myanmar": "နဖူး",
+        "mm_sound": "အဲထို",
+        "note": "",
+        "corrections": [],
+        "example": {
+          "zh": "他的额头很热。",
+          "pinyin": "Tā de étóu hěn rè.",
+          "mm_sound": "တာ့ တဲ့ အဲထို ဟန် ရဲ့",
+          "english": "His forehead is very hot.",
+          "myanmar": "သူ့နဖူးက အရမ်းပူနေတယ်။"
+        },
+        "chars": [
+          {
+            "c": "额",
+            "pinyin": "é",
+            "english": "forehead",
+            "myanmar": "နဖူး",
+            "mm_sound": "အဲ"
+          },
+          {
+            "c": "头",
+            "pinyin": "tóu",
+            "english": "head",
+            "myanmar": "ခေါင်း",
+            "mm_sound": "ထို"
+          }
+        ]
+      },
+      {
+        "hanzi": "眉毛",
+        "pinyin": "méi mao",
+        "english": "eyebrow",
+        "myanmar": "မျက်ခုံး",
+        "mm_sound": "မေမောင်",
+        "note": "",
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "méi máo",
+            "to": "méi mao",
+            "why": "毛 is neutral tone in 眉毛"
+          }
+        ],
+        "example": {
+          "zh": "你的眉毛很好看。",
+          "pinyin": "Nǐ de méimao hěn hǎokàn.",
+          "mm_sound": "နီ တဲ့ မေမောင် ဟန် ဟောင်ခန်",
+          "english": "Your eyebrows look nice.",
+          "myanmar": "နင့်မျက်ခုံးက လှတယ်။"
+        },
+        "chars": [
+          {
+            "c": "眉",
+            "pinyin": "méi",
+            "english": "eyebrow",
+            "myanmar": "မျက်ခုံး",
+            "mm_sound": "မေ"
+          },
+          {
+            "c": "毛",
+            "pinyin": "máo",
+            "english": "hair, fur",
+            "myanmar": "အမွေး",
+            "mm_sound": "မောင်"
+          }
+        ]
+      },
+      {
+        "hanzi": "牙齿",
+        "pinyin": "yá chǐ",
+        "english": "tooth / teeth",
+        "myanmar": "သွား",
+        "mm_sound": "ယားချစ်",
+        "note": "",
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "yá cǐ",
+            "to": "yá chǐ",
+            "why": "齿 uses \"ch\", not \"c\""
+          }
+        ],
+        "example": {
+          "zh": "他的牙齿很白。",
+          "pinyin": "Tā de yáchǐ hěn bái.",
+          "mm_sound": "တာ့ တဲ့ ယားချစ် ဟန် ပိုင်",
+          "english": "His teeth are very white.",
+          "myanmar": "သူ့သွားတွေက အရမ်းဖြူတယ်။"
+        },
+        "chars": [
+          {
+            "c": "牙",
+            "pinyin": "yá",
+            "english": "tooth",
+            "myanmar": "သွား",
+            "mm_sound": "ယား"
+          },
+          {
+            "c": "齿",
+            "pinyin": "chǐ",
+            "english": "tooth",
+            "myanmar": "သွား",
+            "mm_sound": "ချစ်"
+          }
+        ]
+      },
+      {
+        "hanzi": "舌头",
+        "pinyin": "shé tou",
+        "english": "tongue",
+        "myanmar": "လျှာ",
+        "mm_sound": "ရှဲထို",
+        "note": "",
+        "corrections": [],
+        "example": {
+          "zh": "请伸出舌头。",
+          "pinyin": "Qǐng shēnchū shétou.",
+          "mm_sound": "ချင် ရှန်ချူ ရှဲထို",
+          "english": "Please stick out your tongue.",
+          "myanmar": "လျှာကို ထုတ်ပြပါ။"
+        },
+        "chars": [
+          {
+            "c": "舌",
+            "pinyin": "shé",
+            "english": "tongue",
+            "myanmar": "လျှာ",
+            "mm_sound": "ရှဲ"
+          },
+          {
+            "c": "头",
+            "pinyin": "tóu",
+            "english": "head",
+            "myanmar": "ခေါင်း",
+            "mm_sound": "ထို"
+          }
+        ]
+      },
+      {
+        "hanzi": "脸颊",
+        "pinyin": "liǎn jiá",
+        "english": "cheek",
+        "myanmar": "ပါး",
+        "mm_sound": "လျန်ကျား",
+        "note": "",
+        "corrections": [],
+        "example": {
+          "zh": "她的脸颊红红的。",
+          "pinyin": "Tā de liǎnjiá hónghóng de.",
+          "mm_sound": "တာ့ တဲ့ လျန်ကျား ဟုန်ဟုန် တဲ့",
+          "english": "Her cheeks are rosy.",
+          "myanmar": "သူမရဲ့ ပါးလေးတွေ နီရဲနေတယ်။"
+        },
+        "chars": [
+          {
+            "c": "脸",
+            "pinyin": "liǎn",
+            "english": "face",
+            "myanmar": "မျက်နှာ",
+            "mm_sound": "လျန်"
+          },
+          {
+            "c": "颊",
+            "pinyin": "jiá",
+            "english": "cheek",
+            "myanmar": "ပါး",
+            "mm_sound": "ကျား"
+          }
+        ]
+      },
+      {
+        "hanzi": "下巴",
+        "pinyin": "xià ba",
+        "english": "chin",
+        "myanmar": "မေး",
+        "mm_sound": "ရှာပါ",
+        "note": "",
+        "corrections": [],
+        "example": {
+          "zh": "我的下巴很疼。",
+          "pinyin": "Wǒ de xiàba hěn téng.",
+          "mm_sound": "ဝေါ် တဲ့ ရှာပါ ဟန် ထန်",
+          "english": "My chin hurts a lot.",
+          "myanmar": "ကျွန်တော့်မေးက အရမ်းနာတယ်။"
+        },
+        "chars": [
+          {
+            "c": "下",
+            "pinyin": "xià",
+            "english": "below, down",
+            "myanmar": "အောက်",
+            "mm_sound": "ရှာ"
+          },
+          {
+            "c": "巴",
+            "pinyin": "bā",
+            "english": "(noun suffix, light tone in words)",
+            "myanmar": "နောက်ဆက်",
+            "mm_sound": "ပါ"
+          }
+        ]
+      },
+      {
+        "hanzi": "鼻子",
+        "pinyin": "bí zi",
+        "english": "nose",
+        "myanmar": "နှာခေါင်း",
+        "mm_sound": "ပီဇ",
+        "note": "",
+        "corrections": [],
+        "example": {
+          "zh": "大象的鼻子很长。",
+          "pinyin": "Dàxiàng de bízi hěn cháng.",
+          "mm_sound": "တာ့ရှန် တဲ့ ပီဇ ဟန် ချန်",
+          "english": "An elephant’s nose is very long.",
+          "myanmar": "ဆင်ရဲ့ နှာခေါင်းက အရမ်းရှည်တယ်။"
+        },
+        "chars": [
+          {
+            "c": "鼻",
+            "pinyin": "bí",
+            "english": "nose",
+            "myanmar": "နှာခေါင်း",
+            "mm_sound": "ပီ"
+          },
+          {
+            "c": "子",
+            "pinyin": "zǐ",
+            "english": "(noun suffix, light tone in words)",
+            "myanmar": "နောက်ဆက်",
+            "mm_sound": "ဇ"
+          }
+        ]
+      },
+      {
+        "hanzi": "嘴巴",
+        "pinyin": "zuǐ ba",
+        "english": "mouth",
+        "myanmar": "ပါးစပ်",
+        "mm_sound": "ဇွေပါ",
+        "note": "",
+        "corrections": [],
+        "example": {
+          "zh": "请张开嘴巴。",
+          "pinyin": "Qǐng zhāngkāi zuǐba.",
+          "mm_sound": "ချင် ကျန်ခိုင် ဇွေပါ",
+          "english": "Please open your mouth.",
+          "myanmar": "ပါးစပ်ကို ဖွင့်ပါ။"
+        },
+        "chars": [
+          {
+            "c": "嘴",
+            "pinyin": "zuǐ",
+            "english": "mouth",
+            "myanmar": "ပါးစပ်",
+            "mm_sound": "ဇွေ"
+          },
+          {
+            "c": "巴",
+            "pinyin": "bā",
+            "english": "(noun suffix, light tone in words)",
+            "myanmar": "နောက်ဆက်",
+            "mm_sound": "ပါ"
+          }
+        ]
+      }
+    ],
+    "transcript": "- ခေါင်း - tóu - ထို့\n- ဆံပင် - tóu fa - ထိုးဖာ - ထိုဖာ့\n- နဖူး - é tóu - အဲထို့\n- မျက်ခုံး - méi máo - မိုင်မောင် - မိုင်းမောင်\n- သွား - yá chǐ - ယားချိ - ယားချင်\n- လျှာ - shé tou - ရှဲထို့\n- ပါး - liǎn jiá - လျံကျား\n- မေး - xià ba - ရှာပါး - ရှာပါ\n- နှာခေါင်း - bí zi - ပီးကျစ်\n- ပါးစပ် - zuǐ ba - ဇွေ့ပါး",
+    "tx_fixes": [
+      {
+        "field": "pinyin",
+        "from": "yá cǐ",
+        "to": "yá chǐ",
+        "why": "牙齿 uses ch"
+      },
+      {
+        "field": "pinyin",
+        "from": "lǐan jía",
+        "to": "liǎn jiá",
+        "why": "tone marks misplaced (脸颊)"
+      },
+      {
+        "field": "pinyin",
+        "from": "zǔi ba",
+        "to": "zuǐ ba",
+        "why": "tone mark goes on i (嘴巴)"
+      }
+    ]
+  },
+  {
+    "id": "lmweubzv3",
+    "title": "Basic Greetings and Simple Questions",
+    "title_my": "အခြေခံ နှုတ်ဆက်စကားနှင့် ရိုးရှင်းသော မေးခွန်းများ",
+    "date": "2026-11-13",
+    "words": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "english": "I, me",
+        "myanmar": "ငါ",
+        "mm_sound": "ဝေါ်",
+        "note": "Use for both 'I' and 'me'.",
+        "chars": [],
+        "example": {
+          "zh": "我是学生。",
+          "pinyin": "Wǒ shì xuésheng.",
+          "mm_sound": "ဝေါ် ရှစ် ရှွယ်ရှန်",
+          "english": "I am a student.",
+          "myanmar": "ငါ ကျောင်းသား ဖြစ်တယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "english": "you",
+        "myanmar": "နင်",
+        "mm_sound": "နီ",
+        "note": "Everyday 'you'. Polite form is 您 (nín).",
+        "chars": [],
+        "example": {
+          "zh": "你是老师吗？",
+          "pinyin": "Nǐ shì lǎoshī ma?",
+          "mm_sound": "နီ ရှစ် လောင်ရှီ မာ",
+          "english": "Are you a teacher?",
+          "myanmar": "နင် ဆရာ ဖြစ်လား။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "是",
+        "pinyin": "shì",
+        "english": "am, is, are",
+        "myanmar": "ဖြစ်သည်",
+        "mm_sound": "ရှစ်",
+        "note": "Links two nouns. It is not used before adjectives.",
+        "chars": [],
+        "example": {
+          "zh": "他是中国人。",
+          "pinyin": "Tā shì Zhōngguó rén.",
+          "mm_sound": "ထာ ရှစ် ကျုံးကွော ရိန်",
+          "english": "He is Chinese.",
+          "myanmar": "သူ တရုတ်လူမျိုး ဖြစ်တယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "在",
+        "pinyin": "zài",
+        "english": "at, in",
+        "myanmar": "မှာ",
+        "mm_sound": "ဇိုက်",
+        "note": "Used for location: 我在家 means 'I am at home'.",
+        "chars": [],
+        "example": {
+          "zh": "我在家。",
+          "pinyin": "Wǒ zài jiā.",
+          "mm_sound": "ဝေါ် ဇိုက် ကျား",
+          "english": "I am at home.",
+          "myanmar": "ငါ အိမ်မှာ ရှိတယ်။"
+        },
+        "corrections": [
+          {
+            "field": "mm_sound",
+            "from": "ကျိုက်",
+            "to": "ဇိုက်",
+            "why": "z sounds like 'ts', closer to ဇ than ကျ"
+          }
+        ]
+      },
+      {
+        "hanzi": "大",
+        "pinyin": "dà",
+        "english": "big",
+        "myanmar": "ကြီးသော",
+        "mm_sound": "တာ့",
+        "note": "Usually said with 很 (hěn): 很大.",
+        "chars": [],
+        "example": {
+          "zh": "这个苹果很大。",
+          "pinyin": "Zhège píngguǒ hěn dà.",
+          "mm_sound": "ကျဲ့ကဲ့ ဖင်ကော ဟန် တာ့",
+          "english": "This apple is big.",
+          "myanmar": "ဒီပန်းသီး ကြီးတယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "多",
+        "pinyin": "duō",
+        "english": "many, much",
+        "myanmar": "များသော",
+        "mm_sound": "တော",
+        "note": "Usually said with 很 (hěn): 很多.",
+        "chars": [],
+        "example": {
+          "zh": "这里人很多。",
+          "pinyin": "Zhèlǐ rén hěn duō.",
+          "mm_sound": "ကျဲ့လီ ရိန် ဟန် တော",
+          "english": "There are many people here.",
+          "myanmar": "ဒီမှာ လူ အများကြီး ရှိတယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "你是谁？",
+        "pinyin": "Nǐ shì shéi?",
+        "english": "Who are you?",
+        "myanmar": "နင် ဘယ်သူလဲ",
+        "mm_sound": "နီ ရှစ် ရှေ့",
+        "note": "谁 can also be read shuí. This can sound blunt, so add 请问 to be polite.",
+        "chars": [
+          {
+            "c": "你",
+            "pinyin": "nǐ",
+            "english": "you",
+            "myanmar": "နင်",
+            "mm_sound": "နီ"
+          },
+          {
+            "c": "是",
+            "pinyin": "shì",
+            "english": "am, is, are",
+            "myanmar": "ဖြစ်သည်",
+            "mm_sound": "ရှစ်"
+          },
+          {
+            "c": "谁",
+            "pinyin": "shéi",
+            "english": "who",
+            "myanmar": "ဘယ်သူ",
+            "mm_sound": "ရှေ"
+          }
+        ],
+        "example": {
+          "zh": "请问，你是谁？",
+          "pinyin": "Qǐngwèn, nǐ shì shéi?",
+          "mm_sound": "ချင်ဝမ် နီ ရှစ် ရှေ့",
+          "english": "Excuse me, who are you?",
+          "myanmar": "တစ်ဆိတ်လောက်၊ နင် ဘယ်သူလဲ။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "你在哪儿？",
+        "pinyin": "Nǐ zài nǎr?",
+        "english": "Where are you?",
+        "myanmar": "နင် ဘယ်မှာလဲ",
+        "mm_sound": "နီ ဇိုက် နား",
+        "note": "哪 alone means 'which'. For 'where', say 哪儿 (nǎr) or 哪里 (nǎlǐ).",
+        "chars": [
+          {
+            "c": "你",
+            "pinyin": "nǐ",
+            "english": "you",
+            "myanmar": "နင်",
+            "mm_sound": "နီ"
+          },
+          {
+            "c": "在",
+            "pinyin": "zài",
+            "english": "at, in",
+            "myanmar": "မှာ",
+            "mm_sound": "ဇိုင်"
+          },
+          {
+            "c": "哪",
+            "pinyin": "nǎ",
+            "english": "which, where",
+            "myanmar": "ဘယ်",
+            "mm_sound": "နာ"
+          },
+          {
+            "c": "儿",
+            "pinyin": "ér",
+            "english": "suffix (here read r)",
+            "myanmar": "နောက်ဆက်",
+            "mm_sound": "အာ"
+          }
+        ],
+        "example": {
+          "zh": "你在哪儿？我在学校。",
+          "pinyin": "Nǐ zài nǎr? Wǒ zài xuéxiào.",
+          "mm_sound": "နီ ဇိုက် နား? ဝေါ် ဇိုက် ရှွယ်ရှောင်",
+          "english": "Where are you? I'm at school.",
+          "myanmar": "နင် ဘယ်မှာလဲ။ ငါ ကျောင်းမှာ။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "Nǐ zài nǎ?",
+            "to": "Nǐ zài nǎr?",
+            "why": "哪 alone means 'which'; 'where' is 哪儿"
+          },
+          {
+            "field": "mm_sound",
+            "from": "နီကျိုက်နား",
+            "to": "နီ ဇိုက် နား",
+            "why": "z sounds like ဇ, not ကျ"
+          }
+        ]
+      },
+      {
+        "hanzi": "你好吗？",
+        "pinyin": "Nǐ hǎo ma?",
+        "english": "How are you?",
+        "myanmar": "နေကောင်းလား",
+        "mm_sound": "နီ ဟောင် မာ",
+        "note": "Answer: 我很好 (Wǒ hěn hǎo), 'I'm fine'.",
+        "chars": [
+          {
+            "c": "你",
+            "pinyin": "nǐ",
+            "english": "you",
+            "myanmar": "နင်",
+            "mm_sound": "နီ"
+          },
+          {
+            "c": "好",
+            "pinyin": "hǎo",
+            "english": "good, well",
+            "myanmar": "ကောင်း",
+            "mm_sound": "ဟောင်"
+          },
+          {
+            "c": "吗",
+            "pinyin": "ma",
+            "english": "question particle (yes/no)",
+            "myanmar": "လား (မေးခွန်းပစ္စည်း)",
+            "mm_sound": "မာ"
+          }
+        ],
+        "example": {
+          "zh": "你好吗？我很好。",
+          "pinyin": "Nǐ hǎo ma? Wǒ hěn hǎo.",
+          "mm_sound": "နီ ဟောင် မာ? ဝေါ် ဟန် ဟောင်",
+          "english": "How are you? I'm fine.",
+          "myanmar": "နေကောင်းလား။ ငါ နေကောင်းတယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "你多大了？",
+        "pinyin": "Nǐ duō dà le?",
+        "english": "How old are you?",
+        "myanmar": "အသက်ဘယ်လောက်ရှိပြီလဲ",
+        "mm_sound": "နီ တော တာ့ လဲ",
+        "note": "Use this with adults and young people. For small children, say 你几岁了？",
+        "chars": [
+          {
+            "c": "你",
+            "pinyin": "nǐ",
+            "english": "you",
+            "myanmar": "နင်",
+            "mm_sound": "နီ"
+          },
+          {
+            "c": "多",
+            "pinyin": "duō",
+            "english": "how (much)",
+            "myanmar": "ဘယ်လောက်",
+            "mm_sound": "တော"
+          },
+          {
+            "c": "大",
+            "pinyin": "dà",
+            "english": "big, old (age)",
+            "myanmar": "ကြီး",
+            "mm_sound": "တာ့"
+          },
+          {
+            "c": "了",
+            "pinyin": "le",
+            "english": "particle (change/now)",
+            "myanmar": "ပြီ (ပစ္စည်း)",
+            "mm_sound": "လဲ"
+          }
+        ],
+        "example": {
+          "zh": "你多大了？我二十岁。",
+          "pinyin": "Nǐ duō dà le? Wǒ èrshí suì.",
+          "mm_sound": "နီ တော တာ့ လဲ? ဝေါ် အာရှစ် စွေ့",
+          "english": "How old are you? I'm twenty.",
+          "myanmar": "အသက်ဘယ်လောက်ရှိပြီလဲ။ ငါ အသက် နှစ်ဆယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "你呢？",
+        "pinyin": "Nǐ ne?",
+        "english": "And you?",
+        "myanmar": "နင်ရော",
+        "mm_sound": "နီ နဲ",
+        "note": "Used to return the same question.",
+        "chars": [
+          {
+            "c": "你",
+            "pinyin": "nǐ",
+            "english": "you",
+            "myanmar": "နင်",
+            "mm_sound": "နီ"
+          },
+          {
+            "c": "呢",
+            "pinyin": "ne",
+            "english": "question particle ('and...?')",
+            "myanmar": "ရော (ပစ္စည်း)",
+            "mm_sound": "နဲ"
+          }
+        ],
+        "example": {
+          "zh": "我很好，你呢？",
+          "pinyin": "Wǒ hěn hǎo, nǐ ne?",
+          "mm_sound": "ဝေါ် ဟန် ဟောင်၊ နီ နဲ",
+          "english": "I'm fine, and you?",
+          "myanmar": "ငါ နေကောင်းတယ်၊ နင်ရော။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "吗",
+        "pinyin": "ma",
+        "english": "question particle (yes/no)",
+        "myanmar": "လား",
+        "mm_sound": "မာ",
+        "note": "Put it at the end of a sentence to make a yes/no question. Don't use it with 谁/哪/什么.",
+        "chars": [],
+        "example": {
+          "zh": "你是学生吗？",
+          "pinyin": "Nǐ shì xuésheng ma?",
+          "mm_sound": "နီ ရှစ် ရှွယ်ရှန် မာ",
+          "english": "Are you a student?",
+          "myanmar": "နင် ကျောင်းသား ဖြစ်လား။"
+        },
+        "corrections": [
+          {
+            "field": "myanmar",
+            "from": "လား/လဲ",
+            "to": "လား",
+            "why": "吗 = yes/no question (လား). For လဲ, use question words like 谁/哪儿"
+          }
+        ]
+      },
+      {
+        "hanzi": "你好",
+        "pinyin": "nǐ hǎo",
+        "english": "hi, hello",
+        "myanmar": "မင်္ဂလာပါ",
+        "mm_sound": "နီ ဟောင်",
+        "note": "Standard everyday greeting.",
+        "chars": [
+          {
+            "c": "你",
+            "pinyin": "nǐ",
+            "english": "you",
+            "myanmar": "နင်",
+            "mm_sound": "နီ"
+          },
+          {
+            "c": "好",
+            "pinyin": "hǎo",
+            "english": "good",
+            "myanmar": "ကောင်း",
+            "mm_sound": "ဟောင်"
+          }
+        ],
+        "example": {
+          "zh": "你好，我叫小明。",
+          "pinyin": "Nǐ hǎo, wǒ jiào Xiǎo Míng.",
+          "mm_sound": "နီ ဟောင်၊ ဝေါ် ကျောက် ရှောင်မင်",
+          "english": "Hi, my name is Xiao Ming.",
+          "myanmar": "မင်္ဂလာပါ၊ ငါ့နာမည် ရှောင်မင် ပါ။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "您好",
+        "pinyin": "nín hǎo",
+        "english": "hello (polite)",
+        "myanmar": "မင်္ဂလာပါ (ယဉ်ကျေးသောပုံစံ)",
+        "mm_sound": "နင် ဟောင်",
+        "note": "Polite form for teachers, elders and customers.",
+        "chars": [
+          {
+            "c": "您",
+            "pinyin": "nín",
+            "english": "you (polite)",
+            "myanmar": "ခင်ဗျား/ရှင် (ယဉ်ကျေး)",
+            "mm_sound": "နင်"
+          },
+          {
+            "c": "好",
+            "pinyin": "hǎo",
+            "english": "good",
+            "myanmar": "ကောင်း",
+            "mm_sound": "ဟောင်"
+          }
+        ],
+        "example": {
+          "zh": "老师，您好！",
+          "pinyin": "Lǎoshī, nín hǎo!",
+          "mm_sound": "လောင်ရှီ၊ နင် ဟောင်",
+          "english": "Hello, teacher!",
+          "myanmar": "ဆရာ၊ မင်္ဂလာပါ။"
+        },
+        "corrections": []
+      }
+    ]
+  },
+  {
+    "id": "lmwev07xo",
+    "title": "Body Parts: Head and Face",
+    "title_my": "ခန္ဓာကိုယ်အစိတ်အပိုင်းများ - ခေါင်းနှင့် မျက်နှာ",
+    "date": "2026-11-13",
+    "words": [
+      {
+        "hanzi": "耳朵",
+        "pinyin": "ěrduo",
+        "english": "ear",
+        "myanmar": "နားရွက်",
+        "mm_sound": "အဲ့တော",
+        "note": "Measure word: 只 (zhī) for one ear, 对 (duì) for a pair.",
+        "chars": [
+          {
+            "c": "耳",
+            "pinyin": "ěr",
+            "english": "ear",
+            "myanmar": "နား",
+            "mm_sound": "အာ"
+          },
+          {
+            "c": "朵",
+            "pinyin": "duǒ",
+            "english": "measure word for flowers/clouds (here: part of 'ear')",
+            "myanmar": "ပွင့် (ရေတွက်ပုဒ်)",
+            "mm_sound": "တော"
+          }
+        ],
+        "example": {
+          "zh": "我的耳朵很疼。",
+          "pinyin": "Wǒ de ěrduo hěn téng.",
+          "mm_sound": "ဝေါ်တ အဲ့တော ဟင် ထုန်",
+          "english": "My ear hurts a lot.",
+          "myanmar": "ကျွန်တော့်နားရွက် အရမ်းနာတယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "er dūǒ",
+            "to": "ěrduo",
+            "why": "耳 is 3rd tone; 朵 is neutral tone in this word"
+          }
+        ]
+      },
+      {
+        "hanzi": "喉咙",
+        "pinyin": "hóulóng",
+        "english": "throat",
+        "myanmar": "လည်ချောင်း",
+        "mm_sound": "ဟိုးလုံ",
+        "note": "喉咙疼 = sore throat.",
+        "chars": [
+          {
+            "c": "喉",
+            "pinyin": "hóu",
+            "english": "throat",
+            "myanmar": "လည်ချောင်း",
+            "mm_sound": "ဟို"
+          },
+          {
+            "c": "咙",
+            "pinyin": "lóng",
+            "english": "throat (used in 喉咙)",
+            "myanmar": "လည်ချောင်း",
+            "mm_sound": "လုံ"
+          }
+        ],
+        "example": {
+          "zh": "我喉咙疼。",
+          "pinyin": "Wǒ hóulóng téng.",
+          "mm_sound": "ဝေါ် ဟိုးလုံ ထုန်",
+          "english": "I have a sore throat.",
+          "myanmar": "ကျွန်တော် လည်ချောင်းနာတယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "hóu long",
+            "to": "hóulóng",
+            "why": "咙 is 2nd tone; written as one word"
+          }
+        ]
+      },
+      {
+        "hanzi": "睫毛",
+        "pinyin": "jiémáo",
+        "english": "eyelashes",
+        "myanmar": "မျက်တောင်မွေး",
+        "mm_sound": "ကျဲမောင်",
+        "note": "",
+        "chars": [
+          {
+            "c": "睫",
+            "pinyin": "jié",
+            "english": "eyelash",
+            "myanmar": "မျက်တောင်",
+            "mm_sound": "ကျဲ"
+          },
+          {
+            "c": "毛",
+            "pinyin": "máo",
+            "english": "hair, fur",
+            "myanmar": "အမွေး",
+            "mm_sound": "မောင်"
+          }
+        ],
+        "example": {
+          "zh": "她的睫毛很长。",
+          "pinyin": "Tā de jiémáo hěn cháng.",
+          "mm_sound": "ထာတ ကျဲမောင် ဟင် ချန်",
+          "english": "Her eyelashes are long.",
+          "myanmar": "သူမရဲ့ မျက်တောင်မွေးတွေ ရှည်တယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "jíe máo",
+            "to": "jiémáo",
+            "why": "spelled jie; tone mark goes on e"
+          }
+        ]
+      },
+      {
+        "hanzi": "脖子",
+        "pinyin": "bózi",
+        "english": "neck",
+        "myanmar": "လည်ပင်း",
+        "mm_sound": "ပေါ်ဇ",
+        "note": "",
+        "chars": [
+          {
+            "c": "脖",
+            "pinyin": "bó",
+            "english": "neck",
+            "myanmar": "လည်ပင်း",
+            "mm_sound": "ပေါ်"
+          },
+          {
+            "c": "子",
+            "pinyin": "zi",
+            "english": "noun suffix",
+            "myanmar": "နာမ်နောက်ဆက်",
+            "mm_sound": "ဇ"
+          }
+        ],
+        "example": {
+          "zh": "他的脖子很长。",
+          "pinyin": "Tā de bózi hěn cháng.",
+          "mm_sound": "ထာတ ပေါ်ဇ ဟင် ချန်",
+          "english": "His neck is long.",
+          "myanmar": "သူ့လည်ပင်း ရှည်တယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "眼睛",
+        "pinyin": "yǎnjing",
+        "english": "eye(s)",
+        "myanmar": "မျက်လုံး",
+        "mm_sound": "ယန်ကျင်",
+        "note": "Measure word: 双 (shuāng) for a pair, 只 (zhī) for one.",
+        "chars": [
+          {
+            "c": "眼",
+            "pinyin": "yǎn",
+            "english": "eye",
+            "myanmar": "မျက်စိ",
+            "mm_sound": "ယန်"
+          },
+          {
+            "c": "睛",
+            "pinyin": "jīng",
+            "english": "eyeball",
+            "myanmar": "မျက်ဆံ",
+            "mm_sound": "ကျင်"
+          }
+        ],
+        "example": {
+          "zh": "你的眼睛很漂亮。",
+          "pinyin": "Nǐ de yǎnjing hěn piàoliang.",
+          "mm_sound": "နီတ ယန်ကျင် ဟင် ဖျောင်လျန်",
+          "english": "Your eyes are very beautiful.",
+          "myanmar": "မင်းရဲ့မျက်လုံးတွေ အရမ်းလှတယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "yǎnjīng",
+            "to": "yǎnjing",
+            "why": "睛 is neutral tone in 眼睛"
+          }
+        ]
+      },
+      {
+        "hanzi": "脸",
+        "pinyin": "liǎn",
+        "english": "face",
+        "myanmar": "မျက်နှာ",
+        "mm_sound": "လျန်",
+        "note": "Measure word: 张 (zhāng). 洗脸 = wash one's face.",
+        "chars": [],
+        "example": {
+          "zh": "我去洗脸。",
+          "pinyin": "Wǒ qù xǐ liǎn.",
+          "mm_sound": "ဝေါ် ချွီ ရှီ လျန်",
+          "english": "I'm going to wash my face.",
+          "myanmar": "ကျွန်တော် မျက်နှာသစ်သွားမယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "牙齿",
+        "pinyin": "yáchǐ",
+        "english": "teeth, tooth",
+        "myanmar": "သွား",
+        "mm_sound": "ယားချီ",
+        "note": "Measure word: 颗 (kē). In speech, 牙 alone is also common.",
+        "chars": [
+          {
+            "c": "牙",
+            "pinyin": "yá",
+            "english": "tooth",
+            "myanmar": "သွား",
+            "mm_sound": "ယား"
+          },
+          {
+            "c": "齿",
+            "pinyin": "chǐ",
+            "english": "tooth",
+            "myanmar": "သွား",
+            "mm_sound": "ချစ်"
+          }
+        ],
+        "example": {
+          "zh": "他的牙齿很白。",
+          "pinyin": "Tā de yáchǐ hěn bái.",
+          "mm_sound": "ထာတ ယားချီ ဟင် ပိုင်",
+          "english": "His teeth are very white.",
+          "myanmar": "သူ့သွားတွေ အရမ်းဖြူတယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "yá chǐ",
+            "to": "yáchǐ",
+            "why": "written as one word"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lmwev313v",
+    "title": "Come, Go & Away: Action Words",
+    "title_my": "လာ၊ သွား နှင့် ဝေးဝေး – လုပ်ဆောင်ချက် စကားလုံးများ",
+    "date": "2026-11-13",
+    "words": [
+      {
+        "hanzi": "来",
+        "pinyin": "lái",
+        "english": "come",
+        "myanmar": "လာပါ",
+        "mm_sound": "လိုင်",
+        "note": "",
+        "chars": [],
+        "example": {
+          "zh": "你来我家吧。",
+          "pinyin": "Nǐ lái wǒ jiā ba.",
+          "mm_sound": "နီ လိုင် ဝေါ် ကျား ပါ",
+          "english": "Come to my home.",
+          "myanmar": "ငါ့အိမ်ကို လာပါ။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "过来",
+        "pinyin": "guòlái",
+        "english": "come here, come over",
+        "myanmar": "ဒီဘက်လာခဲ့ပါ",
+        "mm_sound": "ကွော့လိုင်",
+        "note": "Movement toward the speaker. The opposite is 过去 (go over there).",
+        "chars": [
+          {
+            "c": "过",
+            "pinyin": "guò",
+            "english": "pass, cross over",
+            "myanmar": "ဖြတ်ကျော်",
+            "mm_sound": "ကွော့"
+          },
+          {
+            "c": "来",
+            "pinyin": "lái",
+            "english": "come",
+            "myanmar": "လာ",
+            "mm_sound": "လိုင်"
+          }
+        ],
+        "example": {
+          "zh": "快过来！",
+          "pinyin": "Kuài guòlái!",
+          "mm_sound": "ခွိုင့် ကွော့လိုင်",
+          "english": "Come here quickly!",
+          "myanmar": "ဒီဘက်ကို မြန်မြန်လာခဲ့ပါ။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "走开",
+        "pinyin": "zǒukāi",
+        "english": "go away",
+        "myanmar": "ဝေးဝေးသွားလိုက်",
+        "mm_sound": "ဇိုခိုင်",
+        "note": "Strong, can sound rude.",
+        "chars": [
+          {
+            "c": "走",
+            "pinyin": "zǒu",
+            "english": "walk, leave",
+            "myanmar": "လမ်းလျှောက်၊ သွား",
+            "mm_sound": "ဇို"
+          },
+          {
+            "c": "开",
+            "pinyin": "kāi",
+            "english": "open; away (off)",
+            "myanmar": "ဖွင့်၊ ခွာ",
+            "mm_sound": "ခိုင်"
+          }
+        ],
+        "example": {
+          "zh": "你走开！",
+          "pinyin": "Nǐ zǒukāi!",
+          "mm_sound": "နီ ဇိုခိုင်",
+          "english": "Go away!",
+          "myanmar": "မင်း ဝေးဝေးသွား။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "拿走",
+        "pinyin": "ná zǒu",
+        "english": "take (it) away",
+        "myanmar": "ဝေးဝေးယူသွား",
+        "mm_sound": "နားဇို",
+        "note": "Often used with 把: 把…拿走.",
+        "chars": [
+          {
+            "c": "拿",
+            "pinyin": "ná",
+            "english": "take, hold",
+            "myanmar": "ယူ၊ ကိုင်",
+            "mm_sound": "နား"
+          },
+          {
+            "c": "走",
+            "pinyin": "zǒu",
+            "english": "go, leave",
+            "myanmar": "သွား",
+            "mm_sound": "ဇို"
+          }
+        ],
+        "example": {
+          "zh": "请把书拿走。",
+          "pinyin": "Qǐng bǎ shū ná zǒu.",
+          "mm_sound": "ချင် ပါ ရှူး နားဇို",
+          "english": "Please take the book away.",
+          "myanmar": "ကျေးဇူးပြုပြီး စာအုပ်ကို ယူသွားပါ။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "扔掉",
+        "pinyin": "rēngdiào",
+        "english": "throw away",
+        "myanmar": "ဝေးဝေးပစ်လိုက်",
+        "mm_sound": "ရင်တြောင့်",
+        "note": "掉 shows the thing is gone. Often used with 把.",
+        "chars": [
+          {
+            "c": "扔",
+            "pinyin": "rēng",
+            "english": "throw",
+            "myanmar": "ပစ်",
+            "mm_sound": "ရင်"
+          },
+          {
+            "c": "掉",
+            "pinyin": "diào",
+            "english": "fall; off, away (result)",
+            "myanmar": "ပြုတ်ကျ၊ ပျောက်",
+            "mm_sound": "တျောင့်"
+          }
+        ],
+        "example": {
+          "zh": "把垃圾扔掉。",
+          "pinyin": "Bǎ lājī rēngdiào.",
+          "mm_sound": "ပါ လာကျီ ရင်တြောင့်",
+          "english": "Throw the trash away.",
+          "myanmar": "အမှိုက်ကို ပစ်လိုက်ပါ။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "立刻",
+        "pinyin": "lìkè",
+        "english": "immediately",
+        "myanmar": "ချက်ချင်း",
+        "mm_sound": "လီခဲ့",
+        "note": "A bit more formal than 马上.",
+        "chars": [
+          {
+            "c": "立",
+            "pinyin": "lì",
+            "english": "stand; at once",
+            "myanmar": "ရပ်",
+            "mm_sound": "လီ"
+          },
+          {
+            "c": "刻",
+            "pinyin": "kè",
+            "english": "moment",
+            "myanmar": "ခဏ",
+            "mm_sound": "ခဲ့"
+          }
+        ],
+        "example": {
+          "zh": "我立刻去。",
+          "pinyin": "Wǒ lìkè qù.",
+          "mm_sound": "ဝေါ် လီခဲ့ ချွီ",
+          "english": "I'll go immediately.",
+          "myanmar": "ကျွန်တော် ချက်ချင်း သွားမယ်။"
+        },
+        "corrections": [
+          {
+            "field": "pinyin",
+            "from": "li kè",
+            "to": "lìkè",
+            "why": "missing 4th tone mark on lì"
+          }
+        ]
+      },
+      {
+        "hanzi": "马上",
+        "pinyin": "mǎshàng",
+        "english": "immediately, right away",
+        "myanmar": "ချက်ချင်း",
+        "mm_sound": "မားရှန့်",
+        "note": "Very common in everyday speech.",
+        "chars": [
+          {
+            "c": "马",
+            "pinyin": "mǎ",
+            "english": "horse",
+            "myanmar": "မြင်း",
+            "mm_sound": "မာ"
+          },
+          {
+            "c": "上",
+            "pinyin": "shàng",
+            "english": "up, on",
+            "myanmar": "အပေါ်",
+            "mm_sound": "ရှန့်"
+          }
+        ],
+        "example": {
+          "zh": "我马上来。",
+          "pinyin": "Wǒ mǎshàng lái.",
+          "mm_sound": "ဝေါ် မားရှန့် လိုင်",
+          "english": "I'm coming right away.",
+          "myanmar": "ကျွန်တော် ချက်ချင်း လာမယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "逃跑",
+        "pinyin": "táopǎo",
+        "english": "run away, escape",
+        "myanmar": "ဝေးဝေးပြေးပါ",
+        "mm_sound": "ထောင်းဖောင်",
+        "note": "",
+        "chars": [
+          {
+            "c": "逃",
+            "pinyin": "táo",
+            "english": "escape, flee",
+            "myanmar": "ထွက်ပြေး",
+            "mm_sound": "ထောင်"
+          },
+          {
+            "c": "跑",
+            "pinyin": "pǎo",
+            "english": "run",
+            "myanmar": "ပြေး",
+            "mm_sound": "ဖောင်"
+          }
+        ],
+        "example": {
+          "zh": "小狗逃跑了。",
+          "pinyin": "Xiǎo gǒu táopǎo le.",
+          "mm_sound": "ရှောက် ကို ထောင်းဖောင် လဲ့",
+          "english": "The puppy ran away.",
+          "myanmar": "ခွေးကလေး ထွက်ပြေးသွားပြီ။"
+        },
+        "corrections": []
+      }
+    ]
+  },
+  {
+    "id": "lmwev6bu0",
+    "title": "Everyday Emotional Expressions",
+    "title_my": "နေ့စဉ်သုံး ခံစားချက်ဖော်ပြသော စကားများ",
+    "date": "2026-11-13",
+    "words": [
+      {
+        "hanzi": "吓死我了",
+        "pinyin": "xià sǐ wǒ le",
+        "english": "I was so scared / You scared me to death",
+        "myanmar": "လန့်လိုက်တာ",
+        "mm_sound": "ရှားစ်ဝေါ်လာ",
+        "note": "Spoken exclamation after being startled.",
+        "chars": [
+          {
+            "c": "吓",
+            "pinyin": "xià",
+            "english": "to scare",
+            "myanmar": "လန့်စေသည်",
+            "mm_sound": "ရှာ့"
+          },
+          {
+            "c": "死",
+            "pinyin": "sǐ",
+            "english": "to die; extremely",
+            "myanmar": "သေသည်၊ အရမ်း",
+            "mm_sound": "စ"
+          },
+          {
+            "c": "我",
+            "pinyin": "wǒ",
+            "english": "I, me",
+            "myanmar": "ကျွန်တော်/ကျွန်မ",
+            "mm_sound": "ဝေါ်"
+          },
+          {
+            "c": "了",
+            "pinyin": "le",
+            "english": "particle (change/completion)",
+            "myanmar": "ပြီးကြောင်းပြ ပစ္စည်း",
+            "mm_sound": "လဲ"
+          }
+        ],
+        "example": {
+          "zh": "你吓死我了！",
+          "pinyin": "Nǐ xià sǐ wǒ le!",
+          "mm_sound": "နီ ရှားစ်ဝေါ်လာ",
+          "english": "You scared me to death!",
+          "myanmar": "မင်း ငါ့ကို လန့်သွားအောင် လုပ်လိုက်တာ။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "听你的",
+        "pinyin": "tīng nǐ de",
+        "english": "Up to you / I'll do as you say",
+        "myanmar": "နင့်သဘောပဲ",
+        "mm_sound": "ထင်းနီတဲ့",
+        "note": "Friendly and agreeable; use it to let the other person decide.",
+        "chars": [
+          {
+            "c": "听",
+            "pinyin": "tīng",
+            "english": "to listen",
+            "myanmar": "နားထောင်သည်",
+            "mm_sound": "ထင်"
+          },
+          {
+            "c": "你",
+            "pinyin": "nǐ",
+            "english": "you",
+            "myanmar": "မင်း/သင်",
+            "mm_sound": "နီ"
+          },
+          {
+            "c": "的",
+            "pinyin": "de",
+            "english": "possessive particle",
+            "myanmar": "ရဲ့ (ပစ္စည်း)",
+            "mm_sound": "တဲ့"
+          }
+        ],
+        "example": {
+          "zh": "吃什么？听你的。",
+          "pinyin": "Chī shénme? Tīng nǐ de.",
+          "mm_sound": "ချစ်ရှဲမ? ထင်းနီတဲ့။",
+          "english": "What should we eat? Up to you.",
+          "myanmar": "ဘာစားမလဲ။ မင်းသဘောပဲ။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "放心吧",
+        "pinyin": "fàngxīn ba",
+        "english": "Don't worry",
+        "myanmar": "စိတ်ချပါ",
+        "mm_sound": "ဖန့်ရှင်းပါ",
+        "note": "吧 makes it soft and reassuring.",
+        "chars": [
+          {
+            "c": "放",
+            "pinyin": "fàng",
+            "english": "to put, to release",
+            "myanmar": "ထားသည်၊ လွှတ်သည်",
+            "mm_sound": "ဖန့်"
+          },
+          {
+            "c": "心",
+            "pinyin": "xīn",
+            "english": "heart, mind",
+            "myanmar": "နှလုံး၊ စိတ်",
+            "mm_sound": "ရှင်"
+          },
+          {
+            "c": "吧",
+            "pinyin": "ba",
+            "english": "suggestion particle",
+            "myanmar": "အကြံပြု ပစ္စည်း (ပါ)",
+            "mm_sound": "ပါ"
+          }
+        ],
+        "example": {
+          "zh": "放心吧，我没事。",
+          "pinyin": "Fàngxīn ba, wǒ méi shì.",
+          "mm_sound": "ဖန့်ရှင်းပါ၊ ဝေါ် မိန်းရှစ်။",
+          "english": "Don't worry, I'm fine.",
+          "myanmar": "စိတ်ချပါ၊ ကျွန်တော် ဘာမှမဖြစ်ပါဘူး။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "随便",
+        "pinyin": "suíbiàn",
+        "english": "As you like; whatever",
+        "myanmar": "လုပ်ချင်တာလုပ်",
+        "mm_sound": "ဆွေပြန့်",
+        "note": "Answering 'whatever' can sound careless, so use it carefully.",
+        "chars": [
+          {
+            "c": "随",
+            "pinyin": "suí",
+            "english": "to follow",
+            "myanmar": "လိုက်သည်",
+            "mm_sound": "ဆွေ"
+          },
+          {
+            "c": "便",
+            "pinyin": "biàn",
+            "english": "convenient",
+            "myanmar": "အဆင်ပြေသော",
+            "mm_sound": "ပျန့်"
+          }
+        ],
+        "example": {
+          "zh": "你随便吃。",
+          "pinyin": "Nǐ suíbiàn chī.",
+          "mm_sound": "နီ ဆွေပြန့် ချစ်။",
+          "english": "Eat whatever you like.",
+          "myanmar": "ကြိုက်တာ စားပါ။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "无语",
+        "pinyin": "wúyǔ",
+        "english": "Speechless",
+        "myanmar": "ပြောစရာစကားမရှိဘူး",
+        "mm_sound": "ဝူးယွီ",
+        "note": "Casual slang that shows annoyance or disbelief.",
+        "chars": [
+          {
+            "c": "无",
+            "pinyin": "wú",
+            "english": "without, none",
+            "myanmar": "မရှိ",
+            "mm_sound": "ဝူ"
+          },
+          {
+            "c": "语",
+            "pinyin": "yǔ",
+            "english": "words, language",
+            "myanmar": "စကား",
+            "mm_sound": "ယွီ"
+          }
+        ],
+        "example": {
+          "zh": "我真无语。",
+          "pinyin": "Wǒ zhēn wúyǔ.",
+          "mm_sound": "ဝေါ် ကျန် ဝူးယွီ။",
+          "english": "I'm really speechless.",
+          "myanmar": "ငါ တကယ် ပြောစရာစကားမရှိတော့ဘူး။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "我的天哪",
+        "pinyin": "wǒ de tiān na",
+        "english": "Oh my god",
+        "myanmar": "ဘုရားရေ",
+        "mm_sound": "ဝေါ်တဲ့ထျန်းနာ",
+        "note": "Short form: 天哪 (tiān na).",
+        "chars": [
+          {
+            "c": "我",
+            "pinyin": "wǒ",
+            "english": "I, my",
+            "myanmar": "ကျွန်တော်/ကျွန်မ",
+            "mm_sound": "ဝေါ်"
+          },
+          {
+            "c": "的",
+            "pinyin": "de",
+            "english": "possessive particle",
+            "myanmar": "ရဲ့ (ပစ္စည်း)",
+            "mm_sound": "တဲ့"
+          },
+          {
+            "c": "天",
+            "pinyin": "tiān",
+            "english": "sky, heaven",
+            "myanmar": "ကောင်းကင်",
+            "mm_sound": "ထျန်"
+          },
+          {
+            "c": "哪",
+            "pinyin": "na",
+            "english": "exclamation particle",
+            "myanmar": "အာမေဍိတ် ပစ္စည်း",
+            "mm_sound": "နာ"
+          }
+        ],
+        "example": {
+          "zh": "我的天哪，太贵了！",
+          "pinyin": "Wǒ de tiān na, tài guì le!",
+          "mm_sound": "ဝေါ်တဲ့ထျန်းနာ၊ ထိုက်ကွေ့လာ။",
+          "english": "Oh my god, it's so expensive!",
+          "myanmar": "ဘုရားရေ၊ ဈေးကြီးလိုက်တာ။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "真可怕",
+        "pinyin": "zhēn kěpà",
+        "english": "It's terrible / so scary",
+        "myanmar": "အရမ်းကြောက်စရာကောင်းတာပဲ",
+        "mm_sound": "ကျန်ခဲပါ",
+        "note": "可怕 = scary, terrible.",
+        "chars": [
+          {
+            "c": "真",
+            "pinyin": "zhēn",
+            "english": "really",
+            "myanmar": "တကယ်",
+            "mm_sound": "ကျန်"
+          },
+          {
+            "c": "可",
+            "pinyin": "kě",
+            "english": "can; -able",
+            "myanmar": "နိုင်သော",
+            "mm_sound": "ခဲ"
+          },
+          {
+            "c": "怕",
+            "pinyin": "pà",
+            "english": "to fear",
+            "myanmar": "ကြောက်သည်",
+            "mm_sound": "ဖာ့"
+          }
+        ],
+        "example": {
+          "zh": "这只狗真可怕。",
+          "pinyin": "Zhè zhī gǒu zhēn kěpà.",
+          "mm_sound": "ကျယ့် ကျစ် ကိုး ကျန်ခဲပါ။",
+          "english": "This dog is really scary.",
+          "myanmar": "ဒီခွေးက တကယ် ကြောက်စရာကောင်းတယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "不一定",
+        "pinyin": "bù yīdìng",
+        "english": "Not necessarily; uncertain",
+        "myanmar": "မသေချာဘူး",
+        "mm_sound": "ပူအီးတင်း",
+        "note": "In speech, 一 is said as yí here: bù yídìng.",
+        "chars": [
+          {
+            "c": "不",
+            "pinyin": "bù",
+            "english": "not",
+            "myanmar": "မ",
+            "mm_sound": "ပူ"
+          },
+          {
+            "c": "一",
+            "pinyin": "yī",
+            "english": "one",
+            "myanmar": "တစ်",
+            "mm_sound": "အီ"
+          },
+          {
+            "c": "定",
+            "pinyin": "dìng",
+            "english": "fixed, settled",
+            "myanmar": "သတ်မှတ်ထားသော",
+            "mm_sound": "တင့်"
+          }
+        ],
+        "example": {
+          "zh": "他明天不一定来。",
+          "pinyin": "Tā míngtiān bù yīdìng lái.",
+          "mm_sound": "ထာ မင်ထျန်း ပူအီးတင်း လိုင်။",
+          "english": "He may not come tomorrow.",
+          "myanmar": "သူ မနက်ဖြန် လာချင်မှ လာမယ်။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "没必要",
+        "pinyin": "méi bìyào",
+        "english": "No need",
+        "myanmar": "မလိုအပ်ဘူး",
+        "mm_sound": "မိန်းပီယောင်",
+        "note": "",
+        "chars": [
+          {
+            "c": "没",
+            "pinyin": "méi",
+            "english": "not, have not",
+            "myanmar": "မ",
+            "mm_sound": "မေ"
+          },
+          {
+            "c": "必",
+            "pinyin": "bì",
+            "english": "must",
+            "myanmar": "မဖြစ်မနေ",
+            "mm_sound": "ပီ"
+          },
+          {
+            "c": "要",
+            "pinyin": "yào",
+            "english": "to need, to want",
+            "myanmar": "လိုသည်",
+            "mm_sound": "ယောင့်"
+          }
+        ],
+        "example": {
+          "zh": "没必要买新的。",
+          "pinyin": "Méi bìyào mǎi xīn de.",
+          "mm_sound": "မိန်းပီယောင် မိုင် ရှင်တဲ့။",
+          "english": "There's no need to buy a new one.",
+          "myanmar": "အသစ်ဝယ်ဖို့ မလိုပါဘူး။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "那就好",
+        "pinyin": "nà jiù hǎo",
+        "english": "That's good",
+        "myanmar": "အဲဒါဆိုကောင်းပြီ",
+        "mm_sound": "နာကျိုဟောင်",
+        "note": "Use it to show relief after hearing good news.",
+        "chars": [
+          {
+            "c": "那",
+            "pinyin": "nà",
+            "english": "that; then",
+            "myanmar": "အဲဒါ",
+            "mm_sound": "နာ့"
+          },
+          {
+            "c": "就",
+            "pinyin": "jiù",
+            "english": "then, just",
+            "myanmar": "ဆိုရင်",
+            "mm_sound": "ကျို"
+          },
+          {
+            "c": "好",
+            "pinyin": "hǎo",
+            "english": "good",
+            "myanmar": "ကောင်း",
+            "mm_sound": "ဟောင်"
+          }
+        ],
+        "example": {
+          "zh": "你没事？那就好。",
+          "pinyin": "Nǐ méi shì? Nà jiù hǎo.",
+          "mm_sound": "နီ မိန်းရှစ်? နာကျိုဟောင်။",
+          "english": "You're okay? That's good.",
+          "myanmar": "မင်း ဘာမှမဖြစ်ဘူးလား။ အဲဒါဆို ကောင်းပြီ။"
+        },
+        "corrections": []
+      },
+      {
+        "hanzi": "太厉害了",
+        "pinyin": "tài lìhai le",
+        "english": "So awesome",
+        "myanmar": "အရမ်းတော်တယ်",
+        "mm_sound": "ထိုက်လီဟိုက်လာ",
+        "note": "太…了 = 'so…!' The 害 in 厉害 is said with a neutral tone.",
+        "chars": [
+          {
+            "c": "太",
+            "pinyin": "tài",
+            "english": "too, very",
+            "myanmar": "အရမ်း",
+            "mm_sound": "ထိုက်"
+          },
+          {
+            "c": "厉",
+            "pinyin": "lì",
+            "english": "severe, strict",
+            "myanmar": "ပြင်းထန်သော",
+            "mm_sound": "လီ"
+          },
+          {
+            "c": "害",
+            "pinyin": "hài",
+            "english": "harm",
+            "myanmar": "ထိခိုက်မှု",
+            "mm_sound": "ဟိုင်"
+          },
+          {
+            "c": "了",
+            "pinyin": "le",
+            "english": "particle (exclamation)",
+            "myanmar": "အာမေဍိတ် ပစ္စည်း",
+            "mm_sound": "လဲ"
+          }
+        ],
+        "example": {
+          "zh": "你太厉害了！",
+          "pinyin": "Nǐ tài lìhai le!",
+          "mm_sound": "နီ ထိုက်လီဟိုက်လာ။",
+          "english": "You're so awesome!",
+          "myanmar": "မင်း အရမ်းတော်တယ်။"
+        },
+        "corrections": []
+      }
+    ]
+  }
+]
